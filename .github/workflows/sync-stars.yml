@@ -1,0 +1,83 @@
+name: Sync GitHub Stars
+
+on:
+  schedule:
+    # Daily at 02:23 UTC (10:23 Asia/Shanghai)
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-stars
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    name: Fetch starred repositories
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch stars and write snapshot
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            const items = await github.paginate(
+              github.rest.activity.listReposStarredByUser,
+              {
+                username: 'wyapj',
+                per_page: 100,
+                sort: 'created',
+                direction: 'desc',
+                headers: { accept: 'application/vnd.github.star+json' },
+              }
+            );
+
+            const repos = items.map((item) => {
+              const repo = item.repo || item;
+              return {
+                full_name: repo.full_name,
+                name: repo.name,
+                html_url: repo.html_url,
+                description: repo.description,
+                language: repo.language,
+                stargazers_count: repo.stargazers_count,
+                forks_count: repo.forks_count,
+                topics: repo.topics || [],
+                pushed_at: repo.pushed_at,
+                created_at: repo.created_at,
+                archived: repo.archived,
+                starred_at: item.starred_at || null,
+              };
+            });
+
+            const payload = {
+              username: 'wyapj',
+              generatedAt: new Date().toISOString(),
+              source: 'github-actions',
+              count: repos.length,
+              repos,
+            };
+
+            fs.mkdirSync('data', { recursive: true });
+            fs.writeFileSync('data/starred.json', JSON.stringify(payload, null, 2) + '\n');
+            core.info(`Fetched ${repos.length} starred repositories`);
+
+      - name: Commit snapshot if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/starred.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+          else
+            git commit -m "chore: sync GitHub stars snapshot"
+            git push origin HEAD:main
+          fi

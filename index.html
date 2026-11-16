@@ -3,503 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wyapj 知识链接图谱</title>
-    <style>
-      :root {
-        --bg: #07131a;
-        --panel: rgba(11, 22, 30, 0.78);
-        --panel-strong: rgba(14, 28, 37, 0.92);
-        --line: rgba(138, 176, 203, 0.28);
-        --text: #e8f3ff;
-        --muted: #a7c2d8;
-        --accent: #7fd7ff;
-        --accent-2: #8cffb9;
-        --accent-3: #ffd36b;
-        --shadow: rgba(0, 0, 0, 0.35);
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        font-family: Inter, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
-        background:
-          radial-gradient(circle at 15% 20%, rgba(58, 130, 180, 0.28), transparent 18%),
-          radial-gradient(circle at 80% 10%, rgba(123, 92, 255, 0.22), transparent 20%),
-          linear-gradient(135deg, #050b10 0%, #0a1520 28%, #091820 100%);
-        color: var(--text);
-        min-height: 100vh;
-      }
-
-      .app {
-        max-width: 1500px;
-        margin: 0 auto;
-        padding: 32px 24px 40px;
-      }
-
-      .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 18px;
-        margin-bottom: 18px;
-      }
-
-      .title-wrap h1 {
-        margin: 0;
-        font-size: clamp(28px, 4vw, 44px);
-        letter-spacing: 0.06em;
-      }
-
-      .title-wrap p {
-        margin: 8px 0 0;
-        color: var(--muted);
-        font-size: 14px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .chip {
-        padding: 8px 14px;
-        border-radius: 999px;
-        background: rgba(122, 194, 255, 0.08);
-        border: 1px solid rgba(134, 188, 222, 0.3);
-        color: var(--muted);
-        font-size: 12px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-
-      .layout {
-        display: grid;
-        grid-template-columns: minmax(0, 2.2fr) minmax(300px, 0.9fr);
-        gap: 24px;
-        align-items: start;
-      }
-
-      .graph-panel,
-      .info-panel {
-        background: var(--panel);
-        border: 1px solid rgba(136, 172, 214, 0.25);
-        border-radius: 18px;
-        box-shadow: 0 20px 45px var(--shadow);
-        backdrop-filter: blur(8px);
-      }
-
-      .graph-panel {
-        padding: 10px 10px 8px;
-      }
-
-      .graph-shell {
-        position: relative;
-        border-radius: 14px;
-        overflow: hidden;
-        background: linear-gradient(180deg, rgba(9, 20, 31, 0.75), rgba(8, 17, 23, 0.85));
-        border: 1px solid rgba(127, 185, 228, 0.15);
-      }
-
-      svg {
-        display: block;
-        width: 100%;
-        height: 760px;
-        background-image:
-          linear-gradient(rgba(133, 178, 214, 0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(133, 178, 214, 0.04) 1px, transparent 1px);
-        background-size: 26px 26px;
-      }
-
-      .node {
-        cursor: pointer;
-        transition: transform 0.18s ease, filter 0.18s ease;
-      }
-
-      .node circle {
-        stroke: rgba(225, 240, 255, 0.7);
-        stroke-width: 1.2;
-        filter: drop-shadow(0 0 10px rgba(123, 216, 255, 0.3));
-      }
-
-      .node:hover circle,
-      .node.active circle {
-        stroke-width: 2.2;
-        filter: drop-shadow(0 0 12px rgba(127, 215, 255, 0.7));
-      }
-
-      .node text {
-        font-size: 12px;
-        fill: var(--text);
-        text-anchor: middle;
-        dominant-baseline: middle;
-        pointer-events: none;
-        font-weight: 600;
-      }
-
-      .node .label-bg {
-        fill: rgba(5, 13, 20, 0.55);
-        stroke: rgba(166, 209, 241, 0.15);
-      }
-
-      .edge {
-        stroke: rgba(146, 198, 230, 0.38);
-        stroke-width: 1.4;
-      }
-
-      .info-panel {
-        padding: 18px 18px 12px;
-        position: sticky;
-        top: 18px;
-      }
-
-      .info-panel h2 {
-        margin: 0 0 14px;
-        font-size: 22px;
-      }
-
-      .project-header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 12px;
-      }
-
-      .badge {
-        display: inline-block;
-        padding: 6px 9px;
-        border-radius: 999px;
-        font-size: 11px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        border: 1px solid rgba(126, 217, 253, 0.5);
-        background: rgba(126, 217, 253, 0.1);
-        color: var(--accent);
-      }
-
-      .meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 8px 0 12px;
-      }
-
-      .meta span {
-        padding: 6px 10px;
-        border-radius: 999px;
-        background: rgba(162, 196, 224, 0.08);
-        border: 1px solid rgba(162, 196, 224, 0.22);
-        font-size: 11px;
-        color: var(--muted);
-      }
-
-      .intro {
-        margin: 0 0 18px;
-        line-height: 1.7;
-        color: #dfeefb;
-        font-size: 14px;
-      }
-
-      .panel-link {
-        display: inline-block;
-        margin-bottom: 16px;
-        text-decoration: none;
-        color: var(--accent-2);
-        font-weight: 600;
-      }
-
-      .related {
-        margin-top: 10px;
-        padding-top: 14px;
-        border-top: 1px solid rgba(160, 184, 210, 0.18);
-      }
-
-      .related h3 {
-        margin: 0 0 10px;
-        font-size: 13px;
-        letter-spacing: 0.08em;
-        color: var(--muted);
-        text-transform: uppercase;
-      }
-
-      .related-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        gap: 8px;
-      }
-
-      .related-list a {
-        display: block;
-        padding: 8px 10px;
-        border-radius: 10px;
-        background: rgba(143, 194, 225, 0.06);
-        border: 1px solid rgba(143, 194, 225, 0.16);
-        color: var(--text);
-        text-decoration: none;
-        font-size: 13px;
-      }
-
-      .legend {
-        display: flex;
-        gap: 18px;
-        flex-wrap: wrap;
-        margin-top: 16px;
-        padding-top: 14px;
-        border-top: 1px solid rgba(160, 184, 210, 0.18);
-      }
-
-      .legend-item {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--muted);
-        font-size: 12px;
-      }
-
-      .legend-dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        display: inline-block;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-      }
-
-      @media (max-width: 1080px) {
-        .layout {
-          grid-template-columns: 1fr;
-        }
-
-        .info-panel {
-          position: static;
-        }
-      }
-    </style>
+    <meta name="theme-color" content="#050b12" />
+    <meta
+      name="description"
+      content="wyapj 的知识链接图谱：按基础知识、工程实践、研究项目三层组织的 AI / 机器人 / 自动驾驶项目网络，支持搜索、筛选和 GitHub Star 自动同步。"
+    />
+    <title>Knowledge Links · wyapj 知识图谱</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%236fd6ff'/%3E%3Ccircle cx='5' cy='9' r='3' fill='%238cffb9'/%3E%3Ccircle cx='27' cy='9' r='3' fill='%23ffd36b'/%3E%3Ccircle cx='24' cy='27' r='3' fill='%23b8a6ff'/%3E%3Ccircle cx='8' cy='26' r='3' fill='%23ff9ecf'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="app">
       <header class="topbar">
-        <div class="title-wrap">
-          <h1>wyapj · 知识链接图谱</h1>
-          <p>AI / Robotics / Autonomous Driving / Learning Network</p>
+        <div class="brand">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6fd6ff" />
+                <stop offset="100%" stop-color="#8cffb9" />
+              </linearGradient>
+            </defs>
+            <path d="M12 16 L24 10 L36 17 L35 32 L22 38 L11 29 Z" fill="none" stroke="url(#brandGrad)" stroke-width="1.4" opacity=".55" />
+            <path d="M12 16 L24 24 L36 17 M24 24 L35 32 M24 24 L22 38 M24 24 L11 29" stroke="url(#brandGrad)" stroke-width="1" opacity=".3" />
+            <circle cx="24" cy="24" r="4.4" fill="url(#brandGrad)" />
+            <circle cx="12" cy="16" r="2.2" fill="#6fd6ff" />
+            <circle cx="36" cy="17" r="2.2" fill="#8cffb9" />
+            <circle cx="35" cy="32" r="2.2" fill="#ffd36b" />
+            <circle cx="22" cy="38" r="2.2" fill="#b8a6ff" />
+            <circle cx="11" cy="29" r="2.2" fill="#ff9ecf" />
+          </svg>
+          <div class="brand-text">
+            <div class="brand-line">
+              <h1>Knowledge Links</h1>
+              <span class="brand-tag">知识图谱仪表盘</span>
+            </div>
+            <p><span class="mono">wyapj</span> · AI / Robotics / Autonomous Driving 学习与项目网络</p>
+          </div>
         </div>
-        <div class="chips">
-          <div class="chip">Starred Map</div>
-          <div class="chip">Topology</div>
-          <div class="chip">Summary</div>
+
+        <div class="top-actions">
+          <div class="sync-status" id="sync-status" data-kind="loading" role="status" aria-live="polite">
+            <span class="status-dot"></span>
+            <span id="sync-text">正在载入…</span>
+          </div>
+          <button class="btn btn-ghost" id="sync-btn" type="button" title="从 GitHub 拉取最新 Star（无需登录）">
+            <span class="sync-icon" aria-hidden="true">↻</span> 同步 GitHub
+          </button>
+          <a class="btn btn-primary" href="https://github.com/wyapj?tab=stars" target="_blank" rel="noreferrer">
+            Star 列表 <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn-ghost source-link" href="https://github.com/wyapj/knowledge-links" target="_blank" rel="noreferrer">
+            源码 <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </header>
 
-      <main class="layout">
-        <section class="graph-panel">
-          <div class="graph-shell">
-            <svg id="graph" viewBox="0 0 1600 760" aria-label="Project topology graph"></svg>
+      <section class="kpis" aria-label="图谱概览">
+        <article class="kpi" style="--kpi:#6fd6ff">
+          <span class="kpi-label">收录项目</span>
+          <strong id="kpi-repos">—</strong>
+          <span class="kpi-sub" id="kpi-repos-sub">正在统计</span>
+        </article>
+        <article class="kpi" style="--kpi:#ffd36b">
+          <span class="kpi-label">累计 Stars</span>
+          <strong id="kpi-stars">—</strong>
+          <span class="kpi-sub" id="kpi-stars-sub">来自仓库快照</span>
+        </article>
+        <article class="kpi" style="--kpi:#8cffb9">
+          <span class="kpi-label">知识分层</span>
+          <strong id="kpi-layers">3</strong>
+          <span class="kpi-sub">基础 → 工程 → 研究</span>
+        </article>
+        <article class="kpi" style="--kpi:#b8a6ff">
+          <span class="kpi-label">覆盖领域</span>
+          <strong id="kpi-cats">5</strong>
+          <span class="kpi-sub">LLM · 机器人 · 自驾 · 基础 · 工具</span>
+        </article>
+      </section>
+
+      <main class="dashboard">
+        <section class="panel graph-panel">
+          <div class="panel-head">
+            <div class="panel-title">
+              <h2>知识网络 <span class="count-pill" id="visible-count">— / —</span></h2>
+              <p>按「基础知识 → 工程实践 → 研究项目」分层，颜色表示领域，连线表示知识关联</p>
+            </div>
+            <div class="graph-tools" role="toolbar" aria-label="图谱视图工具">
+              <button type="button" id="zoom-out" title="缩小（-）" aria-label="缩小">−</button>
+              <button type="button" id="zoom-level" class="zoom-level" title="点击适配全部（0）">100%</button>
+              <button type="button" id="zoom-in" title="放大（+）" aria-label="放大">+</button>
+              <span class="tool-sep" aria-hidden="true"></span>
+              <button type="button" id="zoom-fit" title="适配全部（F）">⤢ 适配</button>
+              <button type="button" id="zoom-reset" title="重置视图（0）" aria-label="重置视图">⟲</button>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              id="search"
+              type="search"
+              placeholder="搜索项目、仓库、标签或简介…"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="搜索项目"
+            />
+            <kbd>/</kbd>
+            <button class="search-clear" id="search-clear" type="button" aria-label="清空搜索" hidden>×</button>
+          </div>
+
+          <div class="filters">
+            <div class="filter-row">
+              <span class="filter-label">分层</span>
+              <div class="chips" id="layer-chips" role="group" aria-label="按知识分层筛选"></div>
+            </div>
+            <div class="filter-row">
+              <span class="filter-label">领域</span>
+              <div class="chips" id="category-chips" role="group" aria-label="按领域筛选"></div>
+              <button class="link-btn" id="filter-reset" type="button">重置筛选</button>
+            </div>
+          </div>
+
+          <div class="graph-shell" id="graph-shell">
+            <svg id="graph" viewBox="0 0 1800 1420" role="img" aria-label="AI、机器人、自动驾驶与学习资源项目知识图谱"></svg>
+
+            <div class="graph-legend" id="graph-legend" aria-label="领域颜色图例"></div>
+
+            <div class="minimap" id="minimap-wrap">
+              <svg id="minimap" viewBox="0 0 200 150" aria-hidden="true"></svg>
+              <span>导航</span>
+            </div>
+
+            <div class="graph-hint" id="graph-hint">
+              拖拽平移 · 滚轮 / 双指缩放 · 双击节点聚焦 · 点击查看详情
+            </div>
+
+            <div class="graph-loading" id="graph-loading">
+              <span class="spinner" aria-hidden="true"></span>
+              <span>正在构建知识图谱…</span>
+            </div>
           </div>
         </section>
 
-        <aside class="info-panel">
-          <h2 id="project-name">项目详情</h2>
-          <div class="project-header">
-            <span class="badge" id="project-tag">AI</span>
-          </div>
+        <aside class="side">
+          <section class="panel search-results hidden" id="search-results-card">
+            <div class="card-head">
+              <h3>搜索结果 <span class="mini-count" id="search-count">0</span></h3>
+              <button class="link-btn" id="search-results-clear" type="button">清空</button>
+            </div>
+            <div id="search-results" class="result-list"></div>
+          </section>
 
-          <div class="meta" id="project-meta"></div>
-          <p class="intro" id="project-intro">点击图中的节点查看项目简介和关联关系。</p>
-          <a id="project-link" href="#" target="_blank" rel="noreferrer" class="panel-link">访问 GitHub 项目</a>
+          <section class="panel detail" id="detail-card" aria-live="polite">
+            <div class="badges" id="project-badges"></div>
+            <h2 id="project-name">项目详情</h2>
+            <p class="repo-line"><a id="project-repo" href="#" target="_blank" rel="noreferrer"></a></p>
+            <div class="meta-row" id="project-meta"></div>
+            <p class="summary" id="project-summary">点击图中的节点查看项目简介和关联关系。</p>
+            <div class="tag-row" id="project-tags"></div>
+            <div class="detail-actions">
+              <a id="project-link" class="btn btn-primary" href="#" target="_blank" rel="noreferrer">
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <button id="focus-btn" class="btn btn-ghost" type="button">在图中定位</button>
+            </div>
+            <div class="related">
+              <h3>关键关联 <span class="mini-count" id="related-count"></span></h3>
+              <div id="related-list" class="related-list"></div>
+            </div>
+          </section>
 
-          <div class="related">
-            <h3>关键关联</h3>
-            <ul id="related-list" class="related-list"></ul>
-          </div>
+          <section class="panel distribution" id="distribution-card">
+            <div class="card-head">
+              <h3>知识分层</h3>
+              <span class="mini-count">3 LAYERS</span>
+            </div>
+            <div id="layer-bars" class="layer-bars"></div>
+            <div class="divider"></div>
+            <div class="card-head">
+              <h3>领域分布</h3>
+              <span class="mini-count">DOMAINS</span>
+            </div>
+            <div id="category-legend" class="cat-legend"></div>
+          </section>
 
-          <div class="legend">
-            <div class="legend-item"><span class="legend-dot" style="background:#7fd7ff"></span> AI / LLM</div>
-            <div class="legend-item"><span class="legend-dot" style="background:#8cffb9"></span> Robotics</div>
-            <div class="legend-item"><span class="legend-dot" style="background:#ffd36b"></span> Autonomous Driving</div>
-            <div class="legend-item"><span class="legend-dot" style="background:#d7a4ff"></span> Learning / Tools</div>
-          </div>
+          <section class="panel recent" id="recent-card">
+            <div class="card-head">
+              <h3>最近 Star</h3>
+              <a class="link-btn" href="https://github.com/wyapj?tab=stars" target="_blank" rel="noreferrer">全部 ↗</a>
+            </div>
+            <div id="recent-list" class="recent-list"></div>
+          </section>
         </aside>
       </main>
+
+      <footer class="footer">
+        <p>
+          数据来源：GitHub Star 与手工注释。仓库快照由
+          <a href="https://github.com/wyapj/knowledge-links/blob/main/.github/workflows/sync-stars.yml" target="_blank" rel="noreferrer">GitHub Actions</a>
+          每日自动同步，新 Star 的项目会自动出现在图谱中。
+        </p>
+        <p>分层与领域由关键词规则自动归类，可在 <span class="mono">js/curated.js</span> 中人工校正。</p>
+      </footer>
     </div>
 
-    <script>
-      const nodes = [
-        { id: 'llm-master', name: 'llm-master', repo: 'youngyangyang04/llm-master', category: 'AI', color: '#7fd7ff', x: 180, y: 110, url: 'https://github.com/youngyangyang04/llm-master', summary: '面向大模型全栈学习的中文教程，覆盖 Prompt Engineering、RAG、Agent、MCP、部署与工程落地，是一条从入门到实战的知识路线。', tags: ['LLM', '学习路线', 'Agent'] },
-        { id: 'foundations-llms', name: 'Foundations-of-LLMs', repo: 'ZJU-LLMs/Foundations-of-LLMs', category: 'AI', color: '#7fd7ff', x: 360, y: 130, url: 'https://github.com/ZJU-LLMs/Foundations-of-LLMs', summary: '系统梳理大语言模型的基础原理，帮助理解 Transformer、训练过程与工程实践，适合建立模型认知框架。', tags: ['Transformer', '基础原理', '训练'] },
-        { id: 'llm-cookbook', name: 'llm-cookbook', repo: 'datawhalechina/llm-cookbook', category: 'AI', color: '#7fd7ff', x: 220, y: 255, url: 'https://github.com/datawhalechina/llm-cookbook', summary: '面向开发者的 LLM 入门教程，聚焦实战、案例与任务化学习，是了解大模型工程的友好起点。', tags: ['开发者', '入门', '实战'] },
-        { id: 'dive-into-llms', name: 'dive-into-llms', repo: 'Lordog/dive-into-llms', category: 'AI', color: '#7fd7ff', x: 440, y: 250, url: 'https://github.com/Lordog/dive-into-llms', summary: '《动手学大模型》系列编程实践教程，强调代码与实验配套学习，适合从原理到实现双向推进。', tags: ['动手实践', '编程教程', '大模型'] },
-        { id: 'learn-ai-engineering', name: 'learn-ai-engineering', repo: 'ashishps1/learn-ai-engineering', category: 'AI', color: '#7fd7ff', x: 120, y: 360, url: 'https://github.com/ashishps1/learn-ai-engineering', summary: '这一系列资源强调 AI 工程化视角，把学习从概念转向构建、评估和部署的全流程认知。', tags: ['AI 工程', '实战路径', '学习资料'] },
-        { id: 'rag-techniques', name: 'RAG_Techniques', repo: 'NirDiamant/RAG_Techniques', category: 'AI', color: '#7fd7ff', x: 520, y: 360, url: 'https://github.com/NirDiamant/RAG_Techniques', summary: 'RAG 技术簇与实验模板，用于理解检索增强生成的关键思路、注入方式和工程模式。', tags: ['RAG', '检索增强', '生成'] },
-        { id: 'agents-towards-production', name: 'agents-towards-production', repo: 'NirDiamant/agents-towards-production', category: 'AI', color: '#7fd7ff', x: 680, y: 300, url: 'https://github.com/NirDiamant/agents-towards-production', summary: '从原型 Agents 到企业部署的端到端路线，关注工具调用、记忆、结构化工作流与生产治理。', tags: ['Agent', '生产部署', 'GenAI'] },
-        { id: 'ecc', name: 'ECC', repo: 'affaan-m/ECC', category: 'AI', color: '#7fd7ff', x: 760, y: 170, url: 'https://github.com/affaan-m/ECC', summary: '一个面向 AI Agent 的性能优化与能力增强框架，强调 Skills、Instincts、Memory 和安全研究。', tags: ['Agent Harness', '优化', '安全'] },
-        { id: 'deepseek-coder', name: 'DeepSeek-Coder', repo: 'deepseek-ai/DeepSeek-Coder', category: 'AI', color: '#7fd7ff', x: 920, y: 220, url: 'https://github.com/deepseek-ai/DeepSeek-Coder', summary: '代码模型阵营的重要项目，强调代码生成、补全与软件工程场景的自动化能力。', tags: ['代码模型', '生成式代码', '编程工具'] },
-        { id: 'awesome-deepseek', name: 'awesome-deepseek-integration', repo: 'deepseek-ai/awesome-deepseek-integration', category: 'AI', color: '#7fd7ff', x: 1010, y: 100, url: 'https://github.com/deepseek-ai/awesome-deepseek-integration', summary: '沉淀了 DeepSeek 生态中的接入与集成经验，适合连接应用开发、平台能力和工程实践。', tags: ['DeepSeek', '生态', '集成'] },
-        { id: 'clip', name: 'CLIP', repo: 'openai/CLIP', category: 'AI', color: '#7fd7ff', x: 1030, y: 430, url: 'https://github.com/openai/CLIP', summary: '视觉-文本对齐的基础模型，为图像理解与多模态工作流提供核心能力。', tags: ['多模态', '视觉理解', 'CLIP'] },
-        { id: 'habitat-lab', name: 'habitat-lab', repo: 'facebookresearch/habitat-lab', category: 'Robotics', color: '#8cffb9', x: 1220, y: 220, url: 'https://github.com/facebookresearch/habitat-lab', summary: '机器人与 embodied AI 的高层仿真环境，适合训练导航、抓取、任务执行等场景。', tags: ['Embodied AI', '模拟环境', '机器人'] },
-        { id: 'navigation2', name: 'navigation2', repo: 'ros-navigation/navigation2', category: 'Robotics', color: '#8cffb9', x: 1280, y: 420, url: 'https://github.com/ros-navigation/navigation2', summary: 'ROS 2 生态中的导航框架，负责路径规划、局部避障和地图导航等核心能力。', tags: ['ROS2', '导航', '路径规划'] },
-        { id: 'robot-bus', name: 'robot-bus', repo: 'indunet/robot-bus', category: 'Robotics', color: '#8cffb9', x: 1430, y: 380, url: 'https://github.com/indunet/robot-bus', summary: '一个带有 ROS2 风格主题、服务和动作的轻量级消息中间件，强调机器人系统间低耦合通信。', tags: ['消息总线', 'ROS2', '通信'] },
-        { id: 'laser-geometry', name: 'laser_geometry', repo: 'ros-perception/laser_geometry', category: 'Robotics', color: '#8cffb9', x: 1370, y: 570, url: 'https://github.com/ros-perception/laser_geometry', summary: '将激光扫描转换为点云的基础工具，为 2D/3D 感知和导航提供数据接口。', tags: ['激光', '点云', '感知'] },
-        { id: 'obstacle-detector', name: 'obstacle_detector', repo: 'wyapj/obstacle_detector', category: 'Robotics', color: '#8cffb9', x: 1180, y: 610, url: 'https://github.com/wyapj/obstacle_detector', summary: '用于检测 2D 激光雷达障碍物的 ROS 包，是导航和避障堆栈中的关键感知前端。', tags: ['避障', '激光雷达', 'ROS'] },
-        { id: 'fusioncore', name: 'fusioncore', repo: 'manankharwar/fusioncore', category: 'Robotics', color: '#8cffb9', x: 1420, y: 655, url: 'https://github.com/manankharwar/fusioncore', summary: '面向户外机器人定位的融合算法，整合 IMU、轮速和 GPS 等传感器，强调鲁棒估计与异常诊断。', tags: ['定位', 'IMU', '融合'] },
-        { id: 'vln-ce', name: 'VLN-CE', repo: 'jacobkrantz/VLN-CE', category: 'Robotics', color: '#8cffb9', x: 1060, y: 620, url: 'https://github.com/jacobkrantz/VLN-CE', summary: '连续环境中的视觉-语言导航基准项目，连接语言理解与真实世界移动决策。', tags: ['VLN', '导航', '视觉语言'] },
-        { id: 'navgpt', name: 'NavGPT', repo: 'GengzeZhou/NavGPT', category: 'Robotics', color: '#8cffb9', x: 920, y: 610, url: 'https://github.com/GengzeZhou/NavGPT', summary: '把 LLM 的显式推理能力引入视觉语言导航任务，强调指令理解、规划与执行的闭环。', tags: ['LLM', '导航', '推理'] },
-        { id: 'python-robotics', name: 'PythonRobotics', repo: 'AtsushiSakai/PythonRobotics', category: 'Tools', color: '#d7a4ff', x: 260, y: 540, url: 'https://github.com/AtsushiSakai/PythonRobotics', summary: '机器人算法实现合集，覆盖定位、地图、规划、控制与优化等核心模块，适合工程算法入门。', tags: ['算法', 'Python', '机器人'] },
-        { id: 'cpp-robotics', name: 'CppRobotics', repo: 'onlytailei/CppRobotics', category: 'Tools', color: '#d7a4ff', x: 400, y: 650, url: 'https://github.com/onlytailei/CppRobotics', summary: 'C++ 实现的机器人算法库，强调数值核算、规划和控制的工程化实现。', tags: ['C++', '规划', 'SLAM'] },
-        { id: 'stable-baselines3', name: 'stable-baselines3', repo: 'DLR-RM/stable-baselines3', category: 'Tools', color: '#d7a4ff', x: 180, y: 660, url: 'https://github.com/DLR-RM/stable-baselines3', summary: '强化学习的稳定实现库，是训练决策策略与模拟器联动的重要基础工具。', tags: ['RL', '强化学习', '策略'] },
-        { id: 'highwayenv', name: 'HighwayEnv', repo: 'Farama-Foundation/HighwayEnv', category: 'AutonomousDriving', color: '#ffd36b', x: 640, y: 560, url: 'https://github.com/Farama-Foundation/HighwayEnv', summary: '用于自动驾驶和决策场景的仿真环境，适合做交互式驾驶决策与强化学习研究。', tags: ['仿真', '驾驶决策', 'RL'] },
-        { id: 'tactics2d', name: 'tactics2d', repo: 'WoodOxen/tactics2d', category: 'AutonomousDriving', color: '#ffd36b', x: 820, y: 630, url: 'https://github.com/WoodOxen/tactics2d', summary: '面向驾驶决策的 RL 仿真环境与生成场景库，强调可扩展的交通和决策系统抽象。', tags: ['驾驶决策', '仿真', '生成场景'] },
-        { id: 'bevformer', name: 'BEVFormer', repo: 'fundamentalvision/BEVFormer', category: 'AutonomousDriving', color: '#ffd36b', x: 980, y: 500, url: 'https://github.com/fundamentalvision/BEVFormer', summary: '基于鸟瞰视角的感知框架，聚焦多摄像头 3D 检测和语义地图建模。', tags: ['BEV', '3D检测', '感知'] },
-        { id: 'openpcdet', name: 'OpenPCDet', repo: 'open-mmlab/OpenPCDet', category: 'AutonomousDriving', color: '#ffd36b', x: 1080, y: 700, url: 'https://github.com/open-mmlab/OpenPCDet', summary: 'LiDAR 为核心的 3D 目标检测工具箱，适合自动驾驶、机器人和点云检测研究。', tags: ['LiDAR', '3D检测', '点云'] },
-        { id: 'uniad', name: 'UniAD', repo: 'OpenDriveLab/UniAD', category: 'AutonomousDriving', color: '#ffd36b', x: 1180, y: 520, url: 'https://github.com/OpenDriveLab/UniAD', summary: '规划导向的端到端自动驾驶框架，整合感知、定位、预测和规划能力。', tags: ['端到端', '规划', '自动驾驶'] },
-        { id: 'end2end-driving', name: 'End-to-end-Autonomous-Driving', repo: 'OpenDriveLab/End-to-end-Autonomous-Driving', category: 'AutonomousDriving', color: '#ffd36b', x: 1330, y: 500, url: 'https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving', summary: '收集和实现端到端驾驶的方法论，体现从感知特征到动作决策的统一模型思想。', tags: ['端到端', '驾驶', '研究实现'] },
-        { id: 'autoware', name: 'autoware', repo: 'autowarefoundation/autoware', category: 'AutonomousDriving', color: '#ffd36b', x: 1120, y: 300, url: 'https://github.com/autowarefoundation/autoware', summary: '开源自动驾驶的综合平台，覆盖感知、融合、规划、控制和车路协同的工程实践。', tags: ['开源平台', '自动驾驶', '系统'] },
-        { id: 'autoware-universe', name: 'autoware_universe', repo: 'autowarefoundation/autoware_universe', category: 'AutonomousDriving', color: '#ffd36b', x: 1280, y: 300, url: 'https://github.com/autowarefoundation/autoware_universe', summary: 'Autoware 的扩展生态，提供更大规模的模块化能力与第三方功能集合。', tags: ['生态', '模块化', '自动驾驶'] },
-        { id: 'apollo', name: 'apollo', repo: 'ApolloAuto/apollo', category: 'AutonomousDriving', color: '#ffd36b', x: 1420, y: 220, url: 'https://github.com/ApolloAuto/apollo', summary: 'Apollo 是一个完善的自动驾驶开放平台，覆盖完整的软件栈与城市级场景支持。', tags: ['平台', '自动驾驶', '软件栈'] },
-        { id: 'openpilot', name: 'openpilot', repo: 'commaai/openpilot', category: 'AutonomousDriving', color: '#ffd36b', x: 1450, y: 110, url: 'https://github.com/commaai/openpilot', summary: '面向实际驾驶辅助系统的开源实现，体现工程落地与系统稳定性之间的平衡。', tags: ['ADAS', '驾驶辅助', '工程'] },
-        { id: 'onevl', name: 'onevl', repo: 'xiaomi-research/onevl', category: 'AutonomousDriving', color: '#ffd36b', x: 900, y: 760, url: 'https://github.com/xiaomi-research/onevl', summary: '面向视觉语言与场景理解的端到端自动驾驶研究资源，强调统一语义理解与决策。', tags: ['多模态', 'ADAS', '研究'] },
-        { id: 'recogdrive', name: 'recogdrive', repo: 'xiaomi-research/recogdrive', category: 'AutonomousDriving', color: '#ffd36b', x: 1100, y: 760, url: 'https://github.com/xiaomi-research/recogdrive', summary: '强化认知驱动的自动驾驶框架，强调从感知到决策的认知增强设计。', tags: ['认知', '强化学习', '驾驶'] }
-      ];
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-      const edges = [
-        ['llm-master', 'foundations-llms'], ['llm-master', 'llm-cookbook'], ['llm-master', 'dive-into-llms'],
-        ['llm-master', 'learn-ai-engineering'], ['foundations-llms', 'dive-into-llms'], ['llm-cookbook', 'learn-ai-engineering'],
-        ['rag-techniques', 'agents-towards-production'], ['agents-towards-production', 'ecc'], ['deepseek-coder', 'awesome-deepseek'],
-        ['clip', 'bevformer'], ['bevformer', 'uniad'], ['openpcdet', 'uniad'], ['uniad', 'end2end-driving'],
-        ['autoware', 'autoware-universe'], ['autoware', 'apollo'], ['autoware', 'openpilot'], ['apollo', 'openpilot'],
-        ['highwayenv', 'tactics2d'], ['highwayenv', 'stable-baselines3'], ['python-robotics', 'cpp-robotics'],
-        ['habitat-lab', 'vln-ce'], ['habitat-lab', 'navgpt'], ['vln-ce', 'navgpt'], ['clip', 'vln-ce'], ['clip', 'navgpt'],
-        ['navigation2', 'obstacle-detector'], ['laser-geometry', 'obstacle-detector'], ['laser-geometry', 'fusioncore'],
-        ['robot-bus', 'navigation2'], ['robot-bus', 'fusioncore'], ['habitat-lab', 'navigation2'], ['autoware', 'navigation2'],
-        ['python-robotics', 'navigation2'], ['python-robotics', 'obstacle-detector'], ['stable-baselines3', 'highwayenv'],
-        ['recogdrive', 'onevl'], ['uniad', 'recogdrive'], ['onevl', 'end2end-driving'], ['autoware', 'uniad']
-      ];
-
-      const nodeMap = Object.fromEntries(nodes.map(node => [node.id, node]));
-      const svg = document.getElementById('graph');
-      const infoName = document.getElementById('project-name');
-      const infoTag = document.getElementById('project-tag');
-      const infoMeta = document.getElementById('project-meta');
-      const infoIntro = document.getElementById('project-intro');
-      const infoLink = document.getElementById('project-link');
-      const relatedList = document.getElementById('related-list');
-
-      const groupLookup = {
-        AI: ['llm-master', 'foundations-llms', 'llm-cookbook', 'dive-into-llms', 'learn-ai-engineering', 'rag-techniques', 'agents-towards-production', 'ecc', 'deepseek-coder', 'awesome-deepseek', 'clip'],
-        Robotics: ['habitat-lab', 'navigation2', 'robot-bus', 'laser-geometry', 'obstacle-detector', 'fusioncore', 'vln-ce', 'navgpt'],
-        AutonomousDriving: ['highwayenv', 'tactics2d', 'bevformer', 'openpcdet', 'uniad', 'end2end-driving', 'autoware', 'autoware-universe', 'apollo', 'openpilot', 'onevl', 'recogdrive'],
-        Tools: ['python-robotics', 'cpp-robotics', 'stable-baselines3']
-      };
-
-      function getCategory(node) {
-        if (groupLookup.AI.includes(node.id)) return 'AI';
-        if (groupLookup.Robotics.includes(node.id)) return 'Robotics';
-        if (groupLookup.AutonomousDriving.includes(node.id)) return 'Autonomous Driving';
-        if (groupLookup.Tools.includes(node.id)) return 'Tools';
-        return 'Other';
-      }
-
-      function renderGraph() {
-        svg.innerHTML = '';
-
-        const ns = 'http://www.w3.org/2000/svg';
-
-        const edgeGroup = document.createElementNS(ns, 'g');
-        edges.forEach(([sourceId, targetId]) => {
-          const source = nodeMap[sourceId];
-          const target = nodeMap[targetId];
-          const line = document.createElementNS(ns, 'line');
-          line.setAttribute('x1', source.x);
-          line.setAttribute('y1', source.y);
-          line.setAttribute('x2', target.x);
-          line.setAttribute('y2', target.y);
-          line.setAttribute('class', 'edge');
-          edgeGroup.appendChild(line);
-        });
-        svg.appendChild(edgeGroup);
-
-        nodes.forEach(node => {
-          const g = document.createElementNS(ns, 'g');
-          g.setAttribute('class', 'node');
-          g.dataset.id = node.id;
-
-          const r = 17;
-          const circle = document.createElementNS(ns, 'circle');
-          circle.setAttribute('cx', node.x);
-          circle.setAttribute('cy', node.y);
-          circle.setAttribute('r', r);
-          circle.setAttribute('fill', node.color);
-          circle.setAttribute('opacity', '0.95');
-          g.appendChild(circle);
-
-          const label = document.createElementNS(ns, 'text');
-          label.setAttribute('x', node.x);
-          label.setAttribute('y', node.y + 30);
-          label.textContent = node.name;
-          g.appendChild(label);
-
-          g.addEventListener('click', () => updateSelection(node.id));
-          svg.appendChild(g);
-        });
-      }
-
-      function updateSelection(id) {
-        const node = nodeMap[id];
-        const category = getCategory(node);
-        infoName.textContent = node.name;
-        infoTag.textContent = category;
-
-        infoMeta.innerHTML = '';
-        const repoChip = document.createElement('span');
-        repoChip.textContent = node.repo;
-        infoMeta.appendChild(repoChip);
-
-        node.tags.forEach(tag => {
-          const tagEl = document.createElement('span');
-          tagEl.textContent = tag;
-          infoMeta.appendChild(tagEl);
-        });
-
-        infoIntro.textContent = node.summary;
-        infoLink.href = node.url;
-        infoLink.textContent = `访问 ${node.repo}`;
-
-        const related = new Set();
-        edges.forEach(([sourceId, targetId]) => {
-          if (sourceId === id) related.add(targetId);
-          if (targetId === id) related.add(sourceId);
-        });
-
-        relatedList.innerHTML = '';
-        if (related.size === 0) {
-          const item = document.createElement('li');
-          item.textContent = '暂无直接关联';
-          relatedList.appendChild(item);
-        } else {
-          [...related].slice(0, 5).forEach(linkId => {
-            const linkNode = nodeMap[linkId];
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = linkNode.url;
-            a.target = '_blank';
-            a.rel = 'noreferrer';
-            a.textContent = `${linkNode.name} · ${linkNode.repo}`;
-            li.appendChild(a);
-            relatedList.appendChild(li);
-          });
-        }
-
-        document.querySelectorAll('.node').forEach(nodeGroup => {
-          nodeGroup.classList.toggle('active', nodeGroup.dataset.id === id);
-        });
-      }
-
-      renderGraph();
-      updateSelection('llm-master');
-    </script>
+    <script src="js/curated.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
