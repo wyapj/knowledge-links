@@ -1,7 +1,7 @@
 {
   "username": "wyapj",
-  "generatedAt": "2026-11-16T05:22:09Z",
-  "source": "initial-scrape",
+  "generatedAt": "2026-11-16T06:16:45.777Z",
+  "source": "github-actions",
   "count": 79,
   "repos": [
     {
@@ -11,8 +11,12 @@
       "description": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence. Project page, results, and research materials.",
       "language": "Python",
       "stargazers_count": 21,
+      "forks_count": 1,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-05T16:12:46Z",
+      "created_at": "2026-10-20T06:16:51Z",
+      "archived": false,
+      "starred_at": "2026-11-05T11:30:22Z"
     },
     {
       "full_name": "pytorch/tutorials",
@@ -21,8 +25,12 @@
       "description": "PyTorch tutorials.",
       "language": "Python",
       "stargazers_count": 9435,
+      "forks_count": 4460,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-06T20:57:36Z",
+      "created_at": "2016-09-30T23:48:36Z",
+      "archived": false,
+      "starred_at": "2026-10-21T08:51:47Z"
     },
     {
       "full_name": "facebookresearch/habitat-lab",
@@ -31,18 +39,40 @@
       "description": "A modular high-level library to train embodied AI agents across a variety of tasks and environments.",
       "language": "Python",
       "stargazers_count": 3189,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 692,
+      "topics": [
+        "ai",
+        "computer-vision",
+        "deep-learning",
+        "deep-reinforcement-learning",
+        "python",
+        "reinforcement-learning",
+        "research",
+        "robotics",
+        "sim2real",
+        "simulator"
+      ],
+      "pushed_at": "2026-05-07T22:03:51Z",
+      "created_at": "2019-02-04T23:12:51Z",
+      "archived": false,
+      "starred_at": "2026-10-19T11:24:02Z"
     },
     {
       "full_name": "openai/CLIP",
       "name": "CLIP",
       "html_url": "https://github.com/openai/CLIP",
-      "description": "CLIP (Contrastive Language-Image Pretraining), Predict the most relevant text snippet given an image",
+      "description": "CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image",
       "language": "Jupyter Notebook",
       "stargazers_count": 34615,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 4066,
+      "topics": [
+        "deep-learning",
+        "machine-learning"
+      ],
+      "pushed_at": "2026-03-25T18:46:40Z",
+      "created_at": "2020-12-16T11:24:42Z",
+      "archived": false,
+      "starred_at": "2026-10-19T11:23:48Z"
     },
     {
       "full_name": "GengzeZhou/NavGPT",
@@ -51,8 +81,12 @@
       "description": "[AAAI 2024] Official implementation of NavGPT: Explicit Reasoning in Vision-and-Language Navigation with Large Language Models",
       "language": "Python",
       "stargazers_count": 357,
+      "forks_count": 34,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2023-11-07T03:14:26Z",
+      "created_at": "2023-10-19T17:13:33Z",
+      "archived": false,
+      "starred_at": "2026-10-19T11:21:50Z"
     },
     {
       "full_name": "jacobkrantz/VLN-CE",
@@ -60,29 +94,55 @@
       "html_url": "https://github.com/jacobkrantz/VLN-CE",
       "description": "Vision-and-Language Navigation in Continuous Environments using Habitat",
       "language": "Python",
-      "stargazers_count": 904,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 905,
+      "forks_count": 93,
+      "topics": [
+        "ai",
+        "computer-vision",
+        "deep-learning",
+        "python",
+        "research",
+        "robotics"
+      ],
+      "pushed_at": "2025-01-07T18:53:33Z",
+      "created_at": "2020-04-03T17:31:00Z",
+      "archived": false,
+      "starred_at": "2026-10-19T11:21:34Z"
     },
     {
       "full_name": "project-instinct/InstinctLab",
       "name": "InstinctLab",
       "html_url": "https://github.com/project-instinct/InstinctLab",
-      "description": "",
+      "description": null,
       "language": "Python",
       "stargazers_count": 874,
+      "forks_count": 121,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-01T06:02:31Z",
+      "created_at": "2026-01-12T02:23:21Z",
+      "archived": false,
+      "starred_at": "2026-10-14T11:49:12Z"
     },
     {
       "full_name": "youngyangyang04/llm-master",
       "name": "llm-master",
       "html_url": "https://github.com/youngyangyang04/llm-master",
       "description": "大模型（LLM）全栈学习路线与中文教程🔥：覆盖 Prompt Engineering、RAG、AI Agent、MCP、微调、模型部署、Transformer、AI 编程与大厂面试，从入门到生产实践。",
-      "language": "",
-      "stargazers_count": 1656,
-      "topics": [],
-      "starred_at": null
+      "language": null,
+      "stargazers_count": 1657,
+      "forks_count": 165,
+      "topics": [
+        "agent",
+        "large-language-models",
+        "llm",
+        "llm-learning",
+        "llm-tutorial",
+        "rag"
+      ],
+      "pushed_at": "2026-11-11T09:06:57Z",
+      "created_at": "2026-09-12T07:33:31Z",
+      "archived": false,
+      "starred_at": "2026-09-14T14:16:39Z"
     },
     {
       "full_name": "indunet/robot-bus",
@@ -91,8 +151,12 @@
       "description": "A lightweight, multi-language messaging framework built on ZeroMQ, bringing ROS2–style topics, services, and actions to your applications without requiring ROS2.",
       "language": "Rust",
       "stargazers_count": 24,
+      "forks_count": 1,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-09-09T11:15:49Z",
+      "created_at": "2026-07-13T14:38:13Z",
+      "archived": false,
+      "starred_at": "2026-08-31T09:50:31Z"
     },
     {
       "full_name": "ros-navigation/navigation2",
@@ -101,8 +165,16 @@
       "description": "ROS 2 Navigation Framework and System",
       "language": "C++",
       "stargazers_count": 5059,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 2032,
+      "topics": [
+        "navigation",
+        "robotics",
+        "ros2"
+      ],
+      "pushed_at": "2026-11-13T18:59:25Z",
+      "created_at": "2018-05-29T23:35:08Z",
+      "archived": false,
+      "starred_at": "2026-08-31T09:49:05Z"
     },
     {
       "full_name": "Mikoto10032/DeepLearning",
@@ -111,18 +183,45 @@
       "description": "深度学习入门教程, 优秀文章, Deep Learning Tutorial",
       "language": "Jupyter Notebook",
       "stargazers_count": 17890,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 3877,
+      "topics": [
+        "cnn",
+        "deep-learning",
+        "deeplearning",
+        "gan",
+        "gcn",
+        "kaggle",
+        "machine-learning",
+        "machinelearning",
+        "mxnet",
+        "pytorch",
+        "rnn",
+        "tensorflow"
+      ],
+      "pushed_at": "2022-04-21T03:24:43Z",
+      "created_at": "2018-04-09T15:53:37Z",
+      "archived": false,
+      "starred_at": "2026-07-31T09:48:02Z"
     },
     {
       "full_name": "sindresorhus/awesome",
       "name": "awesome",
       "html_url": "https://github.com/sindresorhus/awesome",
       "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
-      "language": "",
-      "stargazers_count": 537579,
-      "topics": [],
-      "starred_at": null
+      "language": null,
+      "stargazers_count": 537596,
+      "forks_count": 38453,
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "lists",
+        "resources",
+        "unicorns"
+      ],
+      "pushed_at": "2026-09-02T02:10:47Z",
+      "created_at": "2014-07-11T13:42:37Z",
+      "archived": false,
+      "starred_at": "2026-07-31T09:42:10Z"
     },
     {
       "full_name": "xiaomi-research/recogdrive",
@@ -131,18 +230,39 @@
       "description": "[ICLR 2026] ReCogDrive: A Reinforced Cognitive Framework for End-to-End Autonomous Driving",
       "language": "Python",
       "stargazers_count": 626,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 77,
+      "topics": [
+        "autonomous-driving",
+        "diffusion-policy",
+        "end-to-end-a",
+        "navsim",
+        "reinforcement-learning",
+        "vision-language-action",
+        "vision-language-models"
+      ],
+      "pushed_at": "2026-10-17T16:47:11Z",
+      "created_at": "2025-06-05T15:16:40Z",
+      "archived": false,
+      "starred_at": "2026-06-23T12:33:32Z"
     },
     {
       "full_name": "OpenDriveLab/End-to-end-Autonomous-Driving",
       "name": "End-to-end-Autonomous-Driving",
       "html_url": "https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving",
       "description": "[IEEE T-PAMI 2024] All you need for End-to-end Autonomous Driving",
-      "language": "",
+      "language": null,
       "stargazers_count": 3728,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 340,
+      "topics": [
+        "autonomous-driving",
+        "end-to-end-autonomous-driving",
+        "policy-learning",
+        "simulation"
+      ],
+      "pushed_at": "2025-07-02T05:27:46Z",
+      "created_at": "2023-04-04T13:10:58Z",
+      "archived": false,
+      "starred_at": "2026-06-23T12:17:23Z"
     },
     {
       "full_name": "AtsushiSakai/PythonRobotics",
@@ -150,49 +270,112 @@
       "html_url": "https://github.com/AtsushiSakai/PythonRobotics",
       "description": "Python sample codes and textbook for robotics algorithms.",
       "language": "Python",
-      "stargazers_count": 30925,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 30926,
+      "forks_count": 7446,
+      "topics": [
+        "algorithm",
+        "animation",
+        "autonomous-driving",
+        "autonomous-navigation",
+        "autonomous-vehicles",
+        "control",
+        "cvxpy",
+        "ekf",
+        "hacktoberfest",
+        "localization",
+        "mapping",
+        "path-planning",
+        "python",
+        "robot",
+        "robotics",
+        "slam"
+      ],
+      "pushed_at": "2026-11-10T15:16:07Z",
+      "created_at": "2016-03-21T09:34:43Z",
+      "archived": false,
+      "starred_at": "2026-05-20T06:54:43Z"
     },
     {
       "full_name": "WoodOxen/tactics2d",
       "name": "tactics2d",
       "html_url": "https://github.com/WoodOxen/tactics2d",
-      "description": "Tactics2D: A Reinforcement Learning Environment Library with Generative Scenarios for Driving Decision-making",
+      "description": "Tactics2D: A Reinforcement Learning Environment Library with Generative Scenarios for Driving Decision-making ",
       "language": "Python",
       "stargazers_count": 290,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 37,
+      "topics": [
+        "autonomous-driving",
+        "gym-environment",
+        "python3",
+        "reinforcement-learning",
+        "simulator"
+      ],
+      "pushed_at": "2026-11-03T11:58:18Z",
+      "created_at": "2022-10-26T12:08:11Z",
+      "archived": false,
+      "starred_at": "2026-05-20T06:54:18Z"
     },
     {
       "full_name": "YennNing/Awesome-Code-as-Agent-Harness-Papers",
       "name": "Awesome-Code-as-Agent-Harness-Papers",
       "html_url": "https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers",
       "description": "A curated list of papers and resources based on the survey \"Code as Agent Harness\"",
-      "language": "",
+      "language": null,
       "stargazers_count": 778,
+      "forks_count": 77,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-05-20T05:27:50Z",
+      "created_at": "2026-05-07T18:10:25Z",
+      "archived": false,
+      "starred_at": "2026-05-20T02:34:27Z"
     },
     {
       "full_name": "xiaomi-research/onevl",
       "name": "onevl",
       "html_url": "https://github.com/xiaomi-research/onevl",
-      "description": "",
+      "description": null,
       "language": "Python",
       "stargazers_count": 481,
+      "forks_count": 50,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-09T09:10:27Z",
+      "created_at": "2026-04-30T01:31:50Z",
+      "archived": false,
+      "starred_at": "2026-05-14T09:40:08Z"
     },
     {
       "full_name": "manankharwar/fusioncore",
       "name": "fusioncore",
       "html_url": "https://github.com/manankharwar/fusioncore",
-      "description": "ROS 2 localization for outdoor robots: IMU, wheel encoders and GPS fused in a 23-state UKF at 100 Hz. When the estimate goes wrong it reports which sensor and why, instead of drifting silently. Apa…",
+      "description": "ROS 2 localization for outdoor robots: IMU, wheel encoders and GPS fused in a 23-state UKF at 100 Hz. When the estimate goes wrong it reports which sensor and why, instead of drifting silently. Apache 2.0.",
       "language": "C++",
       "stargazers_count": 385,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 70,
+      "topics": [
+        "autonomous-robots",
+        "autonomous-systems",
+        "gazebo",
+        "gazebo-ros",
+        "gnss",
+        "gps",
+        "imu",
+        "kalman-filter",
+        "localization",
+        "navigation",
+        "robot-localization",
+        "robotics",
+        "ros2",
+        "ros2-jazzy",
+        "sensor-fusion",
+        "slam",
+        "state-estimation",
+        "ukf",
+        "wheel-odometry"
+      ],
+      "pushed_at": "2026-11-07T06:47:35Z",
+      "created_at": "2026-03-17T16:50:46Z",
+      "archived": false,
+      "starred_at": "2026-05-09T05:57:57Z"
     },
     {
       "full_name": "NousResearch/hermes-agent",
@@ -200,9 +383,27 @@
       "html_url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "stargazers_count": 263684,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 263702,
+      "forks_count": 59456,
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "hermes",
+        "hermes-agent",
+        "llm",
+        "nous-research",
+        "openai"
+      ],
+      "pushed_at": "2026-11-16T05:53:39Z",
+      "created_at": "2025-07-22T22:22:28Z",
+      "archived": false,
+      "starred_at": "2026-04-14T01:10:24Z"
     },
     {
       "full_name": "Lordog/dive-into-llms",
@@ -210,19 +411,27 @@
       "html_url": "https://github.com/Lordog/dive-into-llms",
       "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
       "language": "Jupyter Notebook",
-      "stargazers_count": 60230,
+      "stargazers_count": 60231,
+      "forks_count": 7205,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2025-10-10T06:25:48Z",
+      "created_at": "2024-04-08T13:11:40Z",
+      "archived": false,
+      "starred_at": "2026-04-14T01:05:22Z"
     },
     {
       "full_name": "anthropics/claude-code",
       "name": "claude-code",
       "html_url": "https://github.com/anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflo…",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stargazers_count": 155813,
+      "stargazers_count": 155818,
+      "forks_count": 25013,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-15T23:10:55Z",
+      "created_at": "2025-02-22T17:41:21Z",
+      "archived": false,
+      "starred_at": "2026-04-07T01:58:53Z"
     },
     {
       "full_name": "affaan-m/ECC",
@@ -230,19 +439,36 @@
       "html_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stargazers_count": 303939,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 303968,
+      "forks_count": 44798,
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "pushed_at": "2026-11-16T04:55:46Z",
+      "created_at": "2026-01-18T00:51:51Z",
+      "archived": false,
+      "starred_at": "2026-04-07T01:58:02Z"
     },
     {
       "full_name": "MoonshotAI/Attention-Residuals",
       "name": "Attention-Residuals",
       "html_url": "https://github.com/MoonshotAI/Attention-Residuals",
-      "description": "",
-      "language": "",
+      "description": null,
+      "language": null,
       "stargazers_count": 3577,
+      "forks_count": 215,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-03-17T06:23:11Z",
+      "created_at": "2026-03-15T13:29:15Z",
+      "archived": false,
+      "starred_at": "2026-03-26T06:59:35Z"
     },
     {
       "full_name": "Farama-Foundation/HighwayEnv",
@@ -251,8 +477,16 @@
       "description": "A collection of environments for autonomous driving and tactical decision-making tasks",
       "language": "Python",
       "stargazers_count": 3344,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 906,
+      "topics": [
+        "autonomous-driving",
+        "gymnasium-environment",
+        "reinforcement-learning"
+      ],
+      "pushed_at": "2026-11-11T19:12:34Z",
+      "created_at": "2017-11-15T15:38:46Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:53:54Z"
     },
     {
       "full_name": "fundamentalvision/BEVFormer",
@@ -261,8 +495,17 @@
       "description": "[ECCV 2022] This is the official implementation of BEVFormer, a camera-only framework for autonomous driving perception, e.g., 3D object detection and semantic map segmentation.",
       "language": "Python",
       "stargazers_count": 4649,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 754,
+      "topics": [
+        "autonomous-driving",
+        "computer-vision",
+        "deep-learning",
+        "object-detection"
+      ],
+      "pushed_at": "2024-08-15T05:08:16Z",
+      "created_at": "2022-03-30T12:32:32Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:53:14Z"
     },
     {
       "full_name": "open-mmlab/OpenPCDet",
@@ -271,8 +514,19 @@
       "description": "OpenPCDet Toolbox for LiDAR-based 3D Object Detection.",
       "language": "Python",
       "stargazers_count": 5770,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 1477,
+      "topics": [
+        "3d-detection",
+        "autonomous-driving",
+        "object-detection",
+        "point-cloud",
+        "pv-rcnn",
+        "pytorch"
+      ],
+      "pushed_at": "2025-10-08T10:56:40Z",
+      "created_at": "2020-03-14T14:48:31Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:34:37Z"
     },
     {
       "full_name": "OpenDriveLab/UniAD",
@@ -281,8 +535,22 @@
       "description": "[CVPR 2023 Best Paper Award] Planning-oriented Autonomous Driving",
       "language": "Python",
       "stargazers_count": 4823,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 559,
+      "topics": [
+        "autonomous-driving",
+        "autonomous-driving-framework",
+        "bev-segmentation",
+        "end-to-end-autonomous-driving",
+        "motion-planning",
+        "motion-prediction",
+        "multi-object-tracking",
+        "occupancy-prediction",
+        "perception-prediction-planning"
+      ],
+      "pushed_at": "2025-10-29T03:13:35Z",
+      "created_at": "2022-12-07T08:05:49Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:33:11Z"
     },
     {
       "full_name": "commaai/openpilot",
@@ -291,8 +559,16 @@
       "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
       "language": "Python",
       "stargazers_count": 64150,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 11405,
+      "topics": [
+        "advanced-driver-assistance-systems",
+        "driver-assistance-systems",
+        "robotics"
+      ],
+      "pushed_at": "2026-11-16T06:03:59Z",
+      "created_at": "2016-11-24T01:33:30Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:22:00Z"
     },
     {
       "full_name": "ApolloAuto/apollo",
@@ -301,38 +577,68 @@
       "description": "An open autonomous driving platform",
       "language": "C++",
       "stargazers_count": 26907,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 9960,
+      "topics": [
+        "apollo",
+        "autonomous-driving",
+        "autonomous-vehicles",
+        "autonomy",
+        "self-driving-car"
+      ],
+      "pushed_at": "2026-04-16T12:24:54Z",
+      "created_at": "2017-07-04T19:03:31Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:21:52Z"
     },
     {
       "full_name": "alaliqing/AlphaAD",
       "name": "AlphaAD",
       "html_url": "https://github.com/alaliqing/AlphaAD",
-      "description": "🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with categorized papers on perception, planning, control, and more.",
+      "description": "🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   categorized papers on perception, planning, control, and more.",
       "language": "HTML",
       "stargazers_count": 37,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 0,
+      "topics": [
+        "arxiv",
+        "autonomous-driving",
+        "deep-learning",
+        "machine-learning",
+        "paper-collection",
+        "research-papers",
+        "self-driving"
+      ],
+      "pushed_at": "2026-11-16T05:06:28Z",
+      "created_at": "2026-01-13T08:43:20Z",
+      "archived": false,
+      "starred_at": "2026-03-17T02:15:36Z"
     },
     {
       "full_name": "ZJU-LLMs/Foundations-of-LLMs",
       "name": "Foundations-of-LLMs",
       "html_url": "https://github.com/ZJU-LLMs/Foundations-of-LLMs",
       "description": "A book for Learning the Foundations of LLMs",
-      "language": "",
+      "language": null,
       "stargazers_count": 18590,
+      "forks_count": 1757,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2025-12-12T01:55:18Z",
+      "created_at": "2024-06-30T06:39:47Z",
+      "archived": false,
+      "starred_at": "2025-12-10T02:22:41Z"
     },
     {
       "full_name": "autodriving-heart/Awesome-Autonomous-Driving",
       "name": "Awesome-Autonomous-Driving",
       "html_url": "https://github.com/autodriving-heart/Awesome-Autonomous-Driving",
       "description": "awesome-autonomous-driving",
-      "language": "",
+      "language": null,
       "stargazers_count": 1161,
+      "forks_count": 106,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2024-08-19T09:32:08Z",
+      "created_at": "2024-01-14T06:59:01Z",
+      "archived": false,
+      "starred_at": "2025-11-19T00:48:39Z"
     },
     {
       "full_name": "thomasahle/tensorgrad",
@@ -341,8 +647,19 @@
       "description": "Machine Learning with Symbolic Tensors",
       "language": "Python",
       "stargazers_count": 373,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 20,
+      "topics": [
+        "autograd",
+        "derivatives",
+        "neurosymbolic",
+        "probability",
+        "symbolic-computation",
+        "tensor"
+      ],
+      "pushed_at": "2026-10-13T19:55:15Z",
+      "created_at": "2024-04-02T18:16:37Z",
+      "archived": false,
+      "starred_at": "2025-11-08T11:51:08Z"
     },
     {
       "full_name": "microsoft/AI-For-Beginners",
@@ -350,9 +667,24 @@
       "html_url": "https://github.com/microsoft/AI-For-Beginners",
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
-      "stargazers_count": 70858,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 70860,
+      "forks_count": 13808,
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "cnn",
+        "computer-vision",
+        "deep-learning",
+        "gan",
+        "machine-learning",
+        "microsoft-for-beginners",
+        "nlp",
+        "rnn"
+      ],
+      "pushed_at": "2026-11-15T19:46:34Z",
+      "created_at": "2021-03-03T16:27:36Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:49:40Z"
     },
     {
       "full_name": "microsoft/ML-For-Beginners",
@@ -360,9 +692,26 @@
       "html_url": "https://github.com/microsoft/ML-For-Beginners",
       "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
       "language": "Jupyter Notebook",
-      "stargazers_count": 92210,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 92212,
+      "forks_count": 22926,
+      "topics": [
+        "data-science",
+        "education",
+        "machine-learning",
+        "machine-learning-algorithms",
+        "machinelearning",
+        "machinelearning-python",
+        "microsoft-for-beginners",
+        "ml",
+        "python",
+        "r",
+        "scikit-learn",
+        "scikit-learn-python"
+      ],
+      "pushed_at": "2026-11-07T00:35:05Z",
+      "created_at": "2021-03-03T01:34:05Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:49:38Z"
     },
     {
       "full_name": "karpathy/nn-zero-to-hero",
@@ -370,9 +719,13 @@
       "html_url": "https://github.com/karpathy/nn-zero-to-hero",
       "description": "Neural Networks: Zero to Hero",
       "language": "Jupyter Notebook",
-      "stargazers_count": 25727,
+      "stargazers_count": 25730,
+      "forks_count": 3735,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2024-08-18T12:16:26Z",
+      "created_at": "2022-09-08T21:23:25Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:48:51Z"
     },
     {
       "full_name": "GokuMohandas/Made-With-ML",
@@ -381,8 +734,27 @@
       "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
       "language": "Jupyter Notebook",
       "stargazers_count": 50039,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 7818,
+      "topics": [
+        "data-engineering",
+        "data-quality",
+        "data-science",
+        "deep-learning",
+        "distributed-ml",
+        "distributed-training",
+        "llmops",
+        "llms",
+        "machine-learning",
+        "mlops",
+        "natural-language-processing",
+        "python",
+        "pytorch",
+        "ray"
+      ],
+      "pushed_at": "2026-03-04T23:44:21Z",
+      "created_at": "2018-11-05T03:44:27Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:48:36Z"
     },
     {
       "full_name": "NirDiamant/RAG_Techniques",
@@ -390,9 +762,32 @@
       "html_url": "https://github.com/NirDiamant/RAG_Techniques",
       "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 30366,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 30368,
+      "forks_count": 3709,
+      "topics": [
+        "agentic-rag",
+        "ai",
+        "embeddings",
+        "generative-ai",
+        "gpt",
+        "langchain",
+        "llama-index",
+        "llm",
+        "llms",
+        "machine-learning",
+        "nlp",
+        "openai",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "tutorials",
+        "vector-database"
+      ],
+      "pushed_at": "2026-11-02T00:36:15Z",
+      "created_at": "2024-07-13T16:08:36Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:48:21Z"
     },
     {
       "full_name": "NirDiamant/agents-towards-production",
@@ -400,19 +795,60 @@
       "html_url": "https://github.com/NirDiamant/agents-towards-production",
       "description": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 21908,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 21910,
+      "forks_count": 2892,
+      "topics": [
+        "agent",
+        "agent-framework",
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "deployment",
+        "genai",
+        "generative-ai",
+        "langgraph",
+        "llm",
+        "llms",
+        "mcp",
+        "mlops",
+        "multi-agent-systems",
+        "observability",
+        "production",
+        "python",
+        "rag",
+        "tutorials"
+      ],
+      "pushed_at": "2026-11-15T15:18:58Z",
+      "created_at": "2025-06-16T17:33:44Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:48:10Z"
     },
     {
       "full_name": "ashishps1/learn-ai-engineering",
       "name": "learn-ai-engineering",
       "html_url": "https://github.com/ashishps1/learn-ai-engineering",
       "description": "Learn AI and LLMs from scratch using free resources",
-      "language": "",
+      "language": null,
       "stargazers_count": 6235,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 1480,
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "deep-learning",
+        "generative-ai",
+        "large-language-models",
+        "llm",
+        "machine-learning",
+        "mcp",
+        "ml",
+        "prompt-engineering",
+        "rag"
+      ],
+      "pushed_at": "2026-02-05T02:34:40Z",
+      "created_at": "2025-04-11T09:20:56Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:48:05Z"
     },
     {
       "full_name": "keras-team/keras-io",
@@ -421,18 +857,41 @@
       "description": "Keras documentation, hosted live at keras.io",
       "language": "Jupyter Notebook",
       "stargazers_count": 3025,
+      "forks_count": 2117,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-09T22:04:32Z",
+      "created_at": "2020-05-06T19:40:36Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:43:38Z"
     },
     {
       "full_name": "DLR-RM/stable-baselines3",
       "name": "stable-baselines3",
       "html_url": "https://github.com/DLR-RM/stable-baselines3",
-      "description": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms.",
+      "description": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms. ",
       "language": "Python",
       "stargazers_count": 14015,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 2183,
+      "topics": [
+        "baselines",
+        "gsde",
+        "gym",
+        "machine-learning",
+        "openai",
+        "python",
+        "pytorch",
+        "reinforcement-learning",
+        "reinforcement-learning-algorithms",
+        "robotics",
+        "sb3",
+        "sde",
+        "stable-baselines",
+        "toolbox"
+      ],
+      "pushed_at": "2026-10-26T09:35:00Z",
+      "created_at": "2020-05-05T05:52:26Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:43:34Z"
     },
     {
       "full_name": "openai/baselines",
@@ -441,8 +900,12 @@
       "description": "OpenAI Baselines: high-quality implementations of reinforcement learning algorithms",
       "language": "Python",
       "stargazers_count": 16782,
+      "forks_count": 4915,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2024-08-01T21:31:33Z",
+      "created_at": "2017-05-24T01:58:13Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:42:40Z"
     },
     {
       "full_name": "pytorch/examples",
@@ -451,8 +914,12 @@
       "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc.",
       "language": "Python",
       "stargazers_count": 24095,
+      "forks_count": 9802,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2025-09-01T17:21:47Z",
+      "created_at": "2016-08-24T03:12:48Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:42:30Z"
     },
     {
       "full_name": "aymericdamien/TensorFlow-Examples",
@@ -461,8 +928,19 @@
       "description": "TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)",
       "language": "Jupyter Notebook",
       "stargazers_count": 43729,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 14602,
+      "topics": [
+        "deep-learning",
+        "examples",
+        "machine-learning",
+        "python",
+        "tensorflow",
+        "tutorial"
+      ],
+      "pushed_at": "2026-11-13T19:28:48Z",
+      "created_at": "2015-11-11T14:21:19Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:42:10Z"
     },
     {
       "full_name": "scikit-learn/scikit-learn",
@@ -471,8 +949,18 @@
       "description": "scikit-learn: machine learning in Python",
       "language": "Python",
       "stargazers_count": 68191,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 27680,
+      "topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "pushed_at": "2026-11-16T00:51:39Z",
+      "created_at": "2010-08-17T09:43:38Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:41:09Z"
     },
     {
       "full_name": "skindhu/Build-A-Large-Language-Model-CN",
@@ -481,18 +969,40 @@
       "description": "《Build a Large Language Model (From Scratch)》是一本深入探讨大语言模型原理与实现的电子书，适合希望深入了解 GPT 等大模型架构、训练过程及应用开发的学习者。为了让更多中文读者能够接触到这本极具价值的教材，我决定将其翻译成中文，并通过 GitHub 进行开源共享。",
       "language": "HTML",
       "stargazers_count": 4181,
+      "forks_count": 687,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-08-10T02:54:48Z",
+      "created_at": "2024-10-23T03:58:54Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:10:14Z"
     },
     {
       "full_name": "BradyFU/Awesome-Multimodal-Large-Language-Models",
       "name": "Awesome-Multimodal-Large-Language-Models",
       "html_url": "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models",
-      "description": "✨✨Latest Advances on Multimodal Large Language Models",
-      "language": "",
+      "description": ":sparkles::sparkles:Latest Advances on Multimodal Large Language Models",
+      "language": null,
       "stargazers_count": 18088,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 1134,
+      "topics": [
+        "chain-of-thought",
+        "in-context-learning",
+        "instruction-following",
+        "instruction-tuning",
+        "large-language-models",
+        "large-vision-language-model",
+        "large-vision-language-models",
+        "multi-modality",
+        "multimodal-chain-of-thought",
+        "multimodal-in-context-learning",
+        "multimodal-instruction-tuning",
+        "multimodal-large-language-models",
+        "visual-instruction-tuning"
+      ],
+      "pushed_at": "2026-10-29T06:10:45Z",
+      "created_at": "2023-05-19T03:02:29Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:07:15Z"
     },
     {
       "full_name": "HandsOnLLM/Hands-On-Large-Language-Models",
@@ -500,9 +1010,21 @@
       "html_url": "https://github.com/HandsOnLLM/Hands-On-Large-Language-Models",
       "description": "Official code repo for the O'Reilly Book - \"Hands-On Large Language Models\"",
       "language": "Jupyter Notebook",
-      "stargazers_count": 30160,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 30161,
+      "forks_count": 6841,
+      "topics": [
+        "artificial-intelligence",
+        "book",
+        "large-language-models",
+        "llm",
+        "llms",
+        "oreilly",
+        "oreilly-books"
+      ],
+      "pushed_at": "2026-04-24T10:20:08Z",
+      "created_at": "2024-06-28T11:49:46Z",
+      "archived": false,
+      "starred_at": "2025-10-30T12:02:11Z"
     },
     {
       "full_name": "josephmisiti/awesome-machine-learning",
@@ -511,8 +1033,12 @@
       "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
       "language": "Python",
       "stargazers_count": 74836,
+      "forks_count": 15704,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-12T19:27:12Z",
+      "created_at": "2014-07-15T19:11:19Z",
+      "archived": false,
+      "starred_at": "2025-10-30T11:58:45Z"
     },
     {
       "full_name": "AccumulateMore/CV",
@@ -521,8 +1047,29 @@
       "description": "✅（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞 大模型Agent】",
       "language": "Jupyter Notebook",
       "stargazers_count": 24289,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 2673,
+      "topics": [
+        "agent",
+        "agents",
+        "book",
+        "chinese",
+        "computer-vision",
+        "cv",
+        "deep-learning",
+        "jupyter-notebook",
+        "llm",
+        "llms",
+        "machine-learning",
+        "natural-language-processing",
+        "nlp",
+        "notebook",
+        "python",
+        "rag"
+      ],
+      "pushed_at": "2026-09-20T00:41:31Z",
+      "created_at": "2022-03-31T13:19:32Z",
+      "archived": false,
+      "starred_at": "2025-10-26T08:51:51Z"
     },
     {
       "full_name": "datawhalechina/llm-cookbook",
@@ -531,8 +1078,15 @@
       "description": "面向开发者的 LLM 入门教程，吴恩达大模型系列课程中文版",
       "language": "Jupyter Notebook",
       "stargazers_count": 24900,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 2988,
+      "topics": [
+        "cookbook",
+        "llm"
+      ],
+      "pushed_at": "2025-06-12T14:48:07Z",
+      "created_at": "2023-04-28T16:03:37Z",
+      "archived": false,
+      "starred_at": "2025-10-17T12:57:54Z"
     },
     {
       "full_name": "keras-team/keras",
@@ -541,38 +1095,80 @@
       "description": "Deep Learning for humans",
       "language": "Python",
       "stargazers_count": 64424,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 19815,
+      "topics": [
+        "data-science",
+        "deep-learning",
+        "jax",
+        "machine-learning",
+        "neural-networks",
+        "python",
+        "pytorch",
+        "tensorflow"
+      ],
+      "pushed_at": "2026-11-14T20:23:07Z",
+      "created_at": "2015-03-28T00:35:42Z",
+      "archived": false,
+      "starred_at": "2025-10-17T12:50:37Z"
     },
     {
       "full_name": "labmlai/annotated_deep_learning_paper_implementations",
       "name": "annotated_deep_learning_paper_implementations",
       "html_url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
-      "description": "🧑‍🏫 60+ Implementations/tutorials of deep learning papers with side-by-side notes 📝; including transformers (original, xl, switch, feedback, vit, ...), optimizers (adam, adabelief, sophia, ...), ga…",
+      "description": "🧑‍🏫 60+ Implementations/tutorials of deep learning papers with side-by-side notes 📝; including transformers (original, xl, switch, feedback, vit, ...), optimizers (adam, adabelief, sophia, ...), gans(cyclegan, stylegan2, ...), 🎮 reinforcement learning (ppo, dqn), capsnet, distillation, ... 🧠",
       "language": "Python",
       "stargazers_count": 67752,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 6789,
+      "topics": [
+        "attention",
+        "deep-learning",
+        "deep-learning-tutorial",
+        "gan",
+        "literate-programming",
+        "lora",
+        "machine-learning",
+        "neural-networks",
+        "optimizers",
+        "pytorch",
+        "reinforcement-learning",
+        "transformer",
+        "transformers"
+      ],
+      "pushed_at": "2026-11-02T05:57:43Z",
+      "created_at": "2020-08-25T02:29:34Z",
+      "archived": false,
+      "starred_at": "2025-10-17T12:50:10Z"
     },
     {
       "full_name": "VincentWong3/automated-driving-control",
       "name": "automated-driving-control",
       "html_url": "https://github.com/VincentWong3/automated-driving-control",
-      "description": "",
+      "description": null,
       "language": "MATLAB",
       "stargazers_count": 687,
+      "forks_count": 303,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2020-12-04T13:45:46Z",
+      "created_at": "2020-10-14T14:12:18Z",
+      "archived": false,
+      "starred_at": "2025-08-25T12:36:46Z"
     },
     {
       "full_name": "deepseek-ai/awesome-deepseek-integration",
       "name": "awesome-deepseek-integration",
       "html_url": "https://github.com/deepseek-ai/awesome-deepseek-integration",
       "description": "Integrate the DeepSeek API into popular software",
-      "language": "",
-      "stargazers_count": 39895,
-      "topics": [],
-      "starred_at": null
+      "language": null,
+      "stargazers_count": 39896,
+      "forks_count": 4344,
+      "topics": [
+        "awesome",
+        "deepseek"
+      ],
+      "pushed_at": "2026-11-13T10:31:30Z",
+      "created_at": "2024-01-11T02:43:17Z",
+      "archived": false,
+      "starred_at": "2025-02-27T01:11:28Z"
     },
     {
       "full_name": "deepseek-ai/DeepSeek-Coder",
@@ -581,18 +1177,36 @@
       "description": "DeepSeek Coder: Let the Code Write Itself",
       "language": "Python",
       "stargazers_count": 24381,
+      "forks_count": 2953,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2025-11-11T06:44:56Z",
+      "created_at": "2023-10-20T06:38:01Z",
+      "archived": false,
+      "starred_at": "2025-02-27T01:10:56Z"
     },
     {
       "full_name": "autowarefoundation/autoware_universe",
       "name": "autoware_universe",
       "html_url": "https://github.com/autowarefoundation/autoware_universe",
-      "description": "",
+      "description": null,
       "language": "C++",
       "stargazers_count": 1816,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 988,
+      "topics": [
+        "3d-map",
+        "autonomous-driving",
+        "autonomous-vehicles",
+        "autoware",
+        "calibration",
+        "planner",
+        "ros",
+        "ros2",
+        "self-driving-car"
+      ],
+      "pushed_at": "2026-11-16T05:40:17Z",
+      "created_at": "2021-11-19T02:59:37Z",
+      "archived": false,
+      "starred_at": "2024-04-24T02:10:06Z"
     },
     {
       "full_name": "autowarefoundation/autoware",
@@ -601,38 +1215,86 @@
       "description": "Autoware - the world's leading open-source software project for autonomous driving",
       "language": "Dockerfile",
       "stargazers_count": 12252,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 3752,
+      "topics": [
+        "autonomous-driving",
+        "autonomous-vehicles",
+        "autoware",
+        "ros",
+        "ros2"
+      ],
+      "pushed_at": "2026-11-12T14:11:10Z",
+      "created_at": "2015-08-24T23:17:57Z",
+      "archived": false,
+      "starred_at": "2024-04-24T02:06:05Z"
     },
     {
       "full_name": "zgh551/PaperSets",
       "name": "PaperSets",
       "html_url": "https://github.com/zgh551/PaperSets",
       "description": "this is respository include the collect the paper about the automatic parking system,it is involved the path planing ,monition control and the ultrasonic detector",
-      "language": "",
+      "language": null,
       "stargazers_count": 34,
+      "forks_count": 15,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2020-07-17T04:46:13Z",
+      "created_at": "2018-10-10T10:20:57Z",
+      "archived": false,
+      "starred_at": "2024-04-19T02:00:58Z"
     },
     {
       "full_name": "jwasham/coding-interview-university",
       "name": "coding-interview-university",
       "html_url": "https://github.com/jwasham/coding-interview-university",
       "description": "A complete computer science study plan to become a software engineer.",
-      "language": "",
+      "language": null,
       "stargazers_count": 364409,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 85908,
+      "topics": [
+        "algorithm",
+        "algorithms",
+        "coding-interview",
+        "coding-interviews",
+        "computer-science",
+        "data-structures",
+        "interview",
+        "interview-prep",
+        "interview-preparation",
+        "programming-interviews",
+        "software-engineering",
+        "study-plan"
+      ],
+      "pushed_at": "2026-11-07T16:03:02Z",
+      "created_at": "2016-06-06T02:34:12Z",
+      "archived": false,
+      "starred_at": "2024-04-18T03:58:15Z"
     },
     {
       "full_name": "abumq/easyloggingpp",
       "name": "easyloggingpp",
       "html_url": "https://github.com/abumq/easyloggingpp",
-      "description": "C++ logging library. It is powerful, supports asynchronous low latency, extendable, light-weight, fast performing, thread and type safe and consists of many built-in features. It provides ability t…",
+      "description": "C++ logging library. It is powerful, supports asynchronous low latency, extendable, light-weight, fast performing, thread and type safe and consists of many built-in features. It provides ability to write logs in your own customized format. It also provide support for logging your classes, third-party libraries, STL and third-party containers etc.",
       "language": "C++",
-      "stargazers_count": 3930,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 3929,
+      "forks_count": 940,
+      "topics": [
+        "c-plus-plus",
+        "c-plus-plus-11",
+        "cpp",
+        "crash-handler",
+        "cross-platform",
+        "efficient-logging",
+        "language",
+        "logging",
+        "logging-library",
+        "performance-analysis",
+        "stacktrace",
+        "thread-safety"
+      ],
+      "pushed_at": "2025-07-06T05:02:12Z",
+      "created_at": "2012-09-23T03:41:35Z",
+      "archived": true,
+      "starred_at": "2024-04-10T07:28:34Z"
     },
     {
       "full_name": "zjw11525/MyRobot",
@@ -641,8 +1303,12 @@
       "description": "Matlab下对机器人轨迹规划，机器人运动学的仿真，包括六轴机器人正逆解，直线圆弧规划，姿态插补，S速度曲线的规划，三次样条插值等。",
       "language": "C",
       "stargazers_count": 192,
+      "forks_count": 60,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2020-05-26T13:03:41Z",
+      "created_at": "2019-03-15T01:45:48Z",
+      "archived": false,
+      "starred_at": "2024-04-08T01:02:36Z"
     },
     {
       "full_name": "PickNikRobotics/rviz_visual_tools",
@@ -651,8 +1317,12 @@
       "description": "C++ API wrapper for displaying shapes and meshes in Rviz",
       "language": "C++",
       "stargazers_count": 821,
+      "forks_count": 250,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-09-08T21:32:02Z",
+      "created_at": "2014-10-21T00:59:11Z",
+      "archived": false,
+      "starred_at": "2024-01-03T05:38:41Z"
     },
     {
       "full_name": "practical-tutorials/project-based-learning",
@@ -660,9 +1330,22 @@
       "html_url": "https://github.com/practical-tutorials/project-based-learning",
       "description": "Curated list of project-based tutorials",
       "language": "Python",
-      "stargazers_count": 289803,
-      "topics": [],
-      "starred_at": null
+      "stargazers_count": 289808,
+      "forks_count": 36841,
+      "topics": [
+        "beginner-project",
+        "cpp",
+        "golang",
+        "javascript",
+        "project",
+        "python",
+        "tutorial",
+        "webdevelopment"
+      ],
+      "pushed_at": "2026-11-09T06:38:43Z",
+      "created_at": "2017-04-12T05:07:46Z",
+      "archived": false,
+      "starred_at": "2023-12-17T08:53:17Z"
     },
     {
       "full_name": "TheAlgorithms/C-Plus-Plus",
@@ -671,8 +1354,29 @@
       "description": "Collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes.",
       "language": "C++",
       "stargazers_count": 34888,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 7902,
+      "topics": [
+        "algorithm",
+        "algorithm-competitions",
+        "algorithms-implemented",
+        "artificial-intelligence-algorithms",
+        "computer-science",
+        "cpp",
+        "data-structures",
+        "educational",
+        "instructor-materials",
+        "interview-preparation",
+        "interview-questions",
+        "machine-learning",
+        "machine-learning-algorithms",
+        "mathematics",
+        "search",
+        "sort"
+      ],
+      "pushed_at": "2026-10-03T10:34:43Z",
+      "created_at": "2016-07-16T10:19:45Z",
+      "archived": false,
+      "starred_at": "2023-10-18T03:15:14Z"
     },
     {
       "full_name": "onlytailei/CppRobotics",
@@ -681,8 +1385,18 @@
       "description": "cpp implementation of robotics algorithms including localization, mapping, SLAM, path planning and control",
       "language": "C++",
       "stargazers_count": 2246,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 534,
+      "topics": [
+        "algorithms",
+        "cpp",
+        "localization",
+        "planning",
+        "robotics"
+      ],
+      "pushed_at": "2024-03-08T13:25:58Z",
+      "created_at": "2019-03-28T07:09:18Z",
+      "archived": false,
+      "starred_at": "2023-10-07T09:18:02Z"
     },
     {
       "full_name": "gabime/spdlog",
@@ -691,18 +1405,43 @@
       "description": "Fast C++ logging library.",
       "language": "C++",
       "stargazers_count": 29756,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 5341,
+      "topics": [
+        "cpp",
+        "cpp11",
+        "header-only",
+        "logging",
+        "spdlog"
+      ],
+      "pushed_at": "2026-10-24T12:55:41Z",
+      "created_at": "2014-11-01T01:28:53Z",
+      "archived": false,
+      "starred_at": "2023-03-14T09:36:13Z"
     },
     {
       "full_name": "youngyangyang04/leetcode-master",
       "name": "leetcode-master",
       "html_url": "https://github.com/youngyangyang04/leetcode-master",
-      "description": "《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀",
+      "description": "《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀 ",
       "language": "Shell",
       "stargazers_count": 62832,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 12290,
+      "topics": [
+        "algorithm",
+        "cpp",
+        "go",
+        "interview",
+        "java",
+        "javascript",
+        "leetcode",
+        "offer",
+        "programmer",
+        "python"
+      ],
+      "pushed_at": "2026-10-24T02:51:43Z",
+      "created_at": "2019-12-14T12:05:42Z",
+      "archived": false,
+      "starred_at": "2022-05-23T05:39:45Z"
     },
     {
       "full_name": "AGANCPP/AutonomousDriving",
@@ -711,28 +1450,54 @@
       "description": "自动驾驶仿真实现模拟器",
       "language": "C++",
       "stargazers_count": 6,
+      "forks_count": 0,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2019-03-04T03:04:33Z",
+      "created_at": "2019-03-04T03:02:45Z",
+      "archived": false,
+      "starred_at": "2021-12-20T06:51:39Z"
     },
     {
       "full_name": "guofei9987/scikit-opt",
       "name": "scikit-opt",
       "html_url": "https://github.com/guofei9987/scikit-opt",
-      "description": "Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Optimization Algorithm,Immune Algorithm, Artificial Fish Swarm Algorithm, Differential Evolution and TSP(Traveling sa…",
+      "description": "Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Optimization Algorithm,Immune Algorithm, Artificial Fish Swarm Algorithm, Differential Evolution and TSP(Traveling salesman) ",
       "language": "Python",
       "stargazers_count": 6729,
-      "topics": [],
-      "starred_at": null
+      "forks_count": 1107,
+      "topics": [
+        "ant-colony-algorithm",
+        "artificial-intelligence",
+        "fish-swarms",
+        "genetic-algorithm",
+        "heuristic-algorithms",
+        "immune",
+        "immune-algorithm",
+        "optimization",
+        "particle-swarm-optimization",
+        "pso",
+        "simulated-annealing",
+        "travelling-salesman-problem",
+        "tsp"
+      ],
+      "pushed_at": "2026-03-25T09:12:13Z",
+      "created_at": "2017-12-05T10:20:41Z",
+      "archived": false,
+      "starred_at": "2020-10-10T04:11:38Z"
     },
     {
       "full_name": "bcollist/LidarMCplusplus",
       "name": "LidarMCplusplus",
       "html_url": "https://github.com/bcollist/LidarMCplusplus",
-      "description": "Lidar Monte Carlo simulation",
+      "description": "Lidar Monte Carlo simulation ",
       "language": "C++",
       "stargazers_count": 5,
+      "forks_count": 1,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2018-11-15T21:02:16Z",
+      "created_at": "2017-12-17T13:42:03Z",
+      "archived": false,
+      "starred_at": "2019-12-24T11:59:02Z"
     },
     {
       "full_name": "vwaurich/VelodyneLidarUnitySimulation",
@@ -741,8 +1506,12 @@
       "description": "scripts to simulate a velodyne lidar in unity and send the data packages via UDP like a real velodyne puck",
       "language": "C#",
       "stargazers_count": 23,
+      "forks_count": 4,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2017-12-07T11:45:45Z",
+      "created_at": "2017-12-07T11:42:19Z",
+      "archived": false,
+      "starred_at": "2019-12-24T11:56:15Z"
     },
     {
       "full_name": "dkjkls/USV-ObstacleAvoidanceAlgorithm",
@@ -751,18 +1520,26 @@
       "description": "Local Risk Obstacle Avoidance Algorithm of USV",
       "language": "C++",
       "stargazers_count": 74,
+      "forks_count": 24,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2019-07-21T09:09:32Z",
+      "created_at": "2019-07-21T07:37:43Z",
+      "archived": false,
+      "starred_at": "2019-11-21T04:18:40Z"
     },
     {
       "full_name": "yangmingustb/Papers",
       "name": "Papers",
       "html_url": "https://github.com/yangmingustb/Papers",
-      "description": "",
-      "language": "",
+      "description": null,
+      "language": null,
       "stargazers_count": 344,
+      "forks_count": 211,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2020-02-28T14:06:24Z",
+      "created_at": "2019-04-01T09:02:53Z",
+      "archived": false,
+      "starred_at": "2019-11-01T13:54:02Z"
     },
     {
       "full_name": "dvij542/dwa-planner",
@@ -771,18 +1548,26 @@
       "description": "dwa(Dynamic Window Approach) planner",
       "language": "C++",
       "stargazers_count": 3,
+      "forks_count": 1,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2019-04-01T17:23:50Z",
+      "created_at": "2019-04-01T17:03:27Z",
+      "archived": false,
+      "starred_at": "2019-11-01T07:51:32Z"
     },
     {
       "full_name": "tysik/obstacle_detector",
       "name": "obstacle_detector",
       "html_url": "https://github.com/tysik/obstacle_detector",
-      "description": "A ROS package for 2D obstacle detection based on laser range data.",
+      "description": "A ROS package for 2D obstacle detection based on laser range data. ",
       "language": "C++",
       "stargazers_count": 593,
+      "forks_count": 230,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2023-04-28T03:31:15Z",
+      "created_at": "2017-06-27T15:25:29Z",
+      "archived": false,
+      "starred_at": "2019-10-28T03:08:17Z"
     },
     {
       "full_name": "ros-perception/laser_geometry",
@@ -791,8 +1576,12 @@
       "description": "Provides the LaserProjection class for turning laser scan data into point clouds.",
       "language": "C++",
       "stargazers_count": 164,
+      "forks_count": 119,
       "topics": [],
-      "starred_at": null
+      "pushed_at": "2026-11-05T14:41:58Z",
+      "created_at": "2012-10-09T18:49:39Z",
+      "archived": false,
+      "starred_at": "2019-10-28T03:07:48Z"
     }
   ]
 }
