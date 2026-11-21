@@ -1,6 +1,6 @@
 {
   "username": "wyapj",
-  "generatedAt": "2026-11-20T10:12:05.248Z",
+  "generatedAt": "2026-11-21T09:57:59.389Z",
   "source": "github-actions",
   "count": 80,
   "repos": [
@@ -10,8 +10,8 @@
       "html_url": "https://github.com/helloHub1212/dsh-windows-mcp",
       "description": "Windows desktop automation for DeepSeek Harness: the in-box MCP client bridge mounted against CursorTouch/Windows-MCP, with an off-by-default Computer Use switch and an in-app dependency installer.",
       "language": "JavaScript",
-      "stargazers_count": 1940,
-      "forks_count": 9,
+      "stargazers_count": 2033,
+      "forks_count": 10,
       "topics": [
         "computer-use",
         "deepseek-harness",
@@ -47,7 +47,7 @@
       "html_url": "https://github.com/pytorch/tutorials",
       "description": "PyTorch tutorials.",
       "language": "Python",
-      "stargazers_count": 9445,
+      "stargazers_count": 9446,
       "forks_count": 4463,
       "topics": [],
       "pushed_at": "2026-11-06T20:57:36Z",
@@ -86,8 +86,8 @@
       "html_url": "https://github.com/openai/CLIP",
       "description": "CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image",
       "language": "Jupyter Notebook",
-      "stargazers_count": 34634,
-      "forks_count": 4069,
+      "stargazers_count": 34638,
+      "forks_count": 4068,
       "topics": [
         "deep-learning",
         "machine-learning"
@@ -138,7 +138,7 @@
       "html_url": "https://github.com/project-instinct/InstinctLab",
       "description": null,
       "language": "Python",
-      "stargazers_count": 881,
+      "stargazers_count": 882,
       "forks_count": 122,
       "topics": [],
       "pushed_at": "2026-11-01T06:02:31Z",
@@ -152,8 +152,8 @@
       "html_url": "https://github.com/youngyangyang04/llm-master",
       "description": "大模型（LLM）全栈学习路线与中文教程🔥：覆盖 Prompt Engineering、RAG、AI Agent、MCP、微调、模型部署、Transformer、AI 编程与大厂面试，从入门到生产实践。",
       "language": null,
-      "stargazers_count": 1697,
-      "forks_count": 171,
+      "stargazers_count": 1700,
+      "forks_count": 172,
       "topics": [
         "agent",
         "large-language-models",
@@ -176,7 +176,7 @@
       "stargazers_count": 24,
       "forks_count": 1,
       "topics": [],
-      "pushed_at": "2026-11-20T05:27:22Z",
+      "pushed_at": "2026-11-21T09:21:00Z",
       "created_at": "2026-07-13T14:38:13Z",
       "archived": false,
       "starred_at": "2026-08-31T09:50:31Z"
@@ -187,14 +187,14 @@
       "html_url": "https://github.com/ros-navigation/navigation2",
       "description": "ROS 2 Navigation Framework and System",
       "language": "C++",
-      "stargazers_count": 5089,
+      "stargazers_count": 5091,
       "forks_count": 2034,
       "topics": [
         "navigation",
         "robotics",
         "ros2"
       ],
-      "pushed_at": "2026-11-19T18:37:14Z",
+      "pushed_at": "2026-11-21T01:47:57Z",
       "created_at": "2018-05-29T23:35:08Z",
       "archived": false,
       "starred_at": "2026-08-31T09:49:05Z"
@@ -205,7 +205,7 @@
       "html_url": "https://github.com/Mikoto10032/DeepLearning",
       "description": "深度学习入门教程, 优秀文章, Deep Learning Tutorial",
       "language": "Jupyter Notebook",
-      "stargazers_count": 17904,
+      "stargazers_count": 17903,
       "forks_count": 3878,
       "topics": [
         "cnn",
@@ -232,8 +232,8 @@
       "html_url": "https://github.com/sindresorhus/awesome",
       "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
       "language": null,
-      "stargazers_count": 539717,
-      "forks_count": 38563,
+      "stargazers_count": 540206,
+      "forks_count": 38562,
       "topics": [
         "awesome",
         "awesome-list",
@@ -406,8 +406,8 @@
       "html_url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "stargazers_count": 264864,
-      "forks_count": 59823,
+      "stargazers_count": 265080,
+      "forks_count": 59896,
       "topics": [
         "ai",
         "ai-agent",
@@ -423,7 +423,7 @@
         "nous-research",
         "openai"
       ],
-      "pushed_at": "2026-11-20T09:01:32Z",
+      "pushed_at": "2026-11-21T08:46:19Z",
       "created_at": "2025-07-22T22:22:28Z",
       "archived": false,
       "starred_at": "2026-04-14T01:10:24Z"
@@ -434,8 +434,8 @@
       "html_url": "https://github.com/Lordog/dive-into-llms",
       "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
       "language": "Jupyter Notebook",
-      "stargazers_count": 60691,
-      "forks_count": 7282,
+      "stargazers_count": 60842,
+      "forks_count": 7313,
       "topics": [],
       "pushed_at": "2025-10-10T06:25:48Z",
       "created_at": "2024-04-08T13:11:40Z",
@@ -448,10 +448,10 @@
       "html_url": "https://github.com/anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stargazers_count": 156393,
-      "forks_count": 25057,
+      "stargazers_count": 156506,
+      "forks_count": 25066,
       "topics": [],
-      "pushed_at": "2026-11-20T07:56:59Z",
+      "pushed_at": "2026-11-21T06:03:58Z",
       "created_at": "2025-02-22T17:41:21Z",
       "archived": false,
       "starred_at": "2026-04-07T01:58:53Z"
@@ -462,8 +462,8 @@
       "html_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stargazers_count": 307467,
-      "forks_count": 45262,
+      "stargazers_count": 308029,
+      "forks_count": 45326,
       "topics": [
         "ai-agents",
         "anthropic",
@@ -517,7 +517,7 @@
       "html_url": "https://github.com/fundamentalvision/BEVFormer",
       "description": "[ECCV 2022] This is the official implementation of BEVFormer, a camera-only framework for autonomous driving perception, e.g., 3D object detection and semantic map segmentation.",
       "language": "Python",
-      "stargazers_count": 4651,
+      "stargazers_count": 4652,
       "forks_count": 754,
       "topics": [
         "autonomous-driving",
@@ -536,7 +536,7 @@
       "html_url": "https://github.com/open-mmlab/OpenPCDet",
       "description": "OpenPCDet Toolbox for LiDAR-based 3D Object Detection.",
       "language": "Python",
-      "stargazers_count": 5773,
+      "stargazers_count": 5774,
       "forks_count": 1479,
       "topics": [
         "3d-detection",
@@ -581,14 +581,14 @@
       "html_url": "https://github.com/commaai/openpilot",
       "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
       "language": "Python",
-      "stargazers_count": 64183,
-      "forks_count": 11410,
+      "stargazers_count": 64193,
+      "forks_count": 11397,
       "topics": [
         "advanced-driver-assistance-systems",
         "driver-assistance-systems",
         "robotics"
       ],
-      "pushed_at": "2026-11-20T10:05:27Z",
+      "pushed_at": "2026-11-21T09:06:58Z",
       "created_at": "2016-11-24T01:33:30Z",
       "archived": false,
       "starred_at": "2026-03-17T02:22:00Z"
@@ -630,7 +630,7 @@
         "research-papers",
         "self-driving"
       ],
-      "pushed_at": "2026-11-20T06:04:15Z",
+      "pushed_at": "2026-11-21T05:55:55Z",
       "created_at": "2026-01-13T08:43:20Z",
       "archived": false,
       "starred_at": "2026-03-17T02:15:36Z"
@@ -641,8 +641,8 @@
       "html_url": "https://github.com/ZJU-LLMs/Foundations-of-LLMs",
       "description": "A book for Learning the Foundations of LLMs",
       "language": null,
-      "stargazers_count": 18629,
-      "forks_count": 1761,
+      "stargazers_count": 18631,
+      "forks_count": 1762,
       "topics": [],
       "pushed_at": "2025-12-12T01:55:18Z",
       "created_at": "2024-06-30T06:39:47Z",
@@ -690,8 +690,8 @@
       "html_url": "https://github.com/microsoft/AI-For-Beginners",
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
-      "stargazers_count": 71034,
-      "forks_count": 13846,
+      "stargazers_count": 71067,
+      "forks_count": 13841,
       "topics": [
         "ai",
         "artificial-intelligence",
@@ -715,8 +715,8 @@
       "html_url": "https://github.com/microsoft/ML-For-Beginners",
       "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
       "language": "Jupyter Notebook",
-      "stargazers_count": 92340,
-      "forks_count": 22950,
+      "stargazers_count": 92366,
+      "forks_count": 22945,
       "topics": [
         "data-science",
         "education",
@@ -742,8 +742,8 @@
       "html_url": "https://github.com/karpathy/nn-zero-to-hero",
       "description": "Neural Networks: Zero to Hero",
       "language": "Jupyter Notebook",
-      "stargazers_count": 25865,
-      "forks_count": 3755,
+      "stargazers_count": 25893,
+      "forks_count": 3762,
       "topics": [],
       "pushed_at": "2024-08-18T12:16:26Z",
       "created_at": "2022-09-08T21:23:25Z",
@@ -756,8 +756,8 @@
       "html_url": "https://github.com/GokuMohandas/Made-With-ML",
       "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 50097,
-      "forks_count": 7824,
+      "stargazers_count": 50111,
+      "forks_count": 7826,
       "topics": [
         "data-engineering",
         "data-quality",
@@ -785,8 +785,8 @@
       "html_url": "https://github.com/NirDiamant/RAG_Techniques",
       "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 30444,
-      "forks_count": 3718,
+      "stargazers_count": 30459,
+      "forks_count": 3721,
       "topics": [
         "agentic-rag",
         "ai",
@@ -818,7 +818,7 @@
       "html_url": "https://github.com/NirDiamant/agents-towards-production",
       "description": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 21933,
+      "stargazers_count": 21934,
       "forks_count": 2895,
       "topics": [
         "agent",
@@ -853,7 +853,7 @@
       "description": "Learn AI and LLMs from scratch using free resources",
       "language": null,
       "stargazers_count": 6249,
-      "forks_count": 1486,
+      "forks_count": 1487,
       "topics": [
         "agentic-ai",
         "agents",
@@ -922,7 +922,7 @@
       "html_url": "https://github.com/openai/baselines",
       "description": "OpenAI Baselines: high-quality implementations of reinforcement learning algorithms",
       "language": "Python",
-      "stargazers_count": 16783,
+      "stargazers_count": 16782,
       "forks_count": 4914,
       "topics": [],
       "pushed_at": "2024-08-01T21:31:33Z",
@@ -936,7 +936,7 @@
       "html_url": "https://github.com/pytorch/examples",
       "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc.",
       "language": "Python",
-      "stargazers_count": 24099,
+      "stargazers_count": 24101,
       "forks_count": 9807,
       "topics": [],
       "pushed_at": "2025-09-01T17:21:47Z",
@@ -950,7 +950,7 @@
       "html_url": "https://github.com/aymericdamien/TensorFlow-Examples",
       "description": "TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)",
       "language": "Jupyter Notebook",
-      "stargazers_count": 43731,
+      "stargazers_count": 43732,
       "forks_count": 14601,
       "topics": [
         "deep-learning",
@@ -971,8 +971,8 @@
       "html_url": "https://github.com/scikit-learn/scikit-learn",
       "description": "scikit-learn: machine learning in Python",
       "language": "Python",
-      "stargazers_count": 68263,
-      "forks_count": 27691,
+      "stargazers_count": 68277,
+      "forks_count": 27679,
       "topics": [
         "data-analysis",
         "data-science",
@@ -980,7 +980,7 @@
         "python",
         "statistics"
       ],
-      "pushed_at": "2026-11-20T09:15:58Z",
+      "pushed_at": "2026-11-21T05:56:34Z",
       "created_at": "2010-08-17T09:43:38Z",
       "archived": false,
       "starred_at": "2025-10-30T12:41:09Z"
@@ -1005,7 +1005,7 @@
       "html_url": "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models",
       "description": ":sparkles::sparkles:Latest Advances on Multimodal Large Language Models",
       "language": null,
-      "stargazers_count": 18091,
+      "stargazers_count": 18090,
       "forks_count": 1134,
       "topics": [
         "chain-of-thought",
@@ -1033,8 +1033,8 @@
       "html_url": "https://github.com/HandsOnLLM/Hands-On-Large-Language-Models",
       "description": "Official code repo for the O'Reilly Book - \"Hands-On Large Language Models\"",
       "language": "Jupyter Notebook",
-      "stargazers_count": 30218,
-      "forks_count": 6847,
+      "stargazers_count": 30231,
+      "forks_count": 6850,
       "topics": [
         "artificial-intelligence",
         "book",
@@ -1055,8 +1055,8 @@
       "html_url": "https://github.com/josephmisiti/awesome-machine-learning",
       "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
       "language": "Python",
-      "stargazers_count": 74857,
-      "forks_count": 15709,
+      "stargazers_count": 74866,
+      "forks_count": 15695,
       "topics": [],
       "pushed_at": "2026-11-12T19:27:12Z",
       "created_at": "2014-07-15T19:11:19Z",
@@ -1069,7 +1069,7 @@
       "html_url": "https://github.com/AccumulateMore/CV",
       "description": "✅（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞 大模型Agent】",
       "language": "Jupyter Notebook",
-      "stargazers_count": 24320,
+      "stargazers_count": 24324,
       "forks_count": 2674,
       "topics": [
         "agent",
@@ -1100,7 +1100,7 @@
       "html_url": "https://github.com/datawhalechina/llm-cookbook",
       "description": "面向开发者的 LLM 入门教程，吴恩达大模型系列课程中文版",
       "language": "Jupyter Notebook",
-      "stargazers_count": 24918,
+      "stargazers_count": 24920,
       "forks_count": 2993,
       "topics": [
         "cookbook",
@@ -1117,8 +1117,8 @@
       "html_url": "https://github.com/keras-team/keras",
       "description": "Deep Learning for humans",
       "language": "Python",
-      "stargazers_count": 64442,
-      "forks_count": 19819,
+      "stargazers_count": 64446,
+      "forks_count": 19805,
       "topics": [
         "data-science",
         "deep-learning",
@@ -1129,7 +1129,7 @@
         "pytorch",
         "tensorflow"
       ],
-      "pushed_at": "2026-11-20T02:15:20Z",
+      "pushed_at": "2026-11-20T23:54:36Z",
       "created_at": "2015-03-28T00:35:42Z",
       "archived": false,
       "starred_at": "2025-10-17T12:50:37Z"
@@ -1140,8 +1140,8 @@
       "html_url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
       "description": "🧑‍🏫 60+ Implementations/tutorials of deep learning papers with side-by-side notes 📝; including transformers (original, xl, switch, feedback, vit, ...), optimizers (adam, adabelief, sophia, ...), gans(cyclegan, stylegan2, ...), 🎮 reinforcement learning (ppo, dqn), capsnet, distillation, ... 🧠",
       "language": "Python",
-      "stargazers_count": 67773,
-      "forks_count": 6792,
+      "stargazers_count": 67780,
+      "forks_count": 6776,
       "topics": [
         "attention",
         "deep-learning",
@@ -1182,8 +1182,8 @@
       "html_url": "https://github.com/deepseek-ai/awesome-deepseek-integration",
       "description": "Integrate the DeepSeek API into popular software",
       "language": null,
-      "stargazers_count": 39968,
-      "forks_count": 4357,
+      "stargazers_count": 39984,
+      "forks_count": 4359,
       "topics": [
         "awesome",
         "deepseek"
@@ -1199,8 +1199,8 @@
       "html_url": "https://github.com/deepseek-ai/DeepSeek-Coder",
       "description": "DeepSeek Coder: Let the Code Write Itself",
       "language": "Python",
-      "stargazers_count": 24385,
-      "forks_count": 2950,
+      "stargazers_count": 24392,
+      "forks_count": 2952,
       "topics": [],
       "pushed_at": "2025-11-11T06:44:56Z",
       "created_at": "2023-10-20T06:38:01Z",
@@ -1213,8 +1213,8 @@
       "html_url": "https://github.com/autowarefoundation/autoware_universe",
       "description": null,
       "language": "C++",
-      "stargazers_count": 1818,
-      "forks_count": 993,
+      "stargazers_count": 1820,
+      "forks_count": 992,
       "topics": [
         "3d-map",
         "autonomous-driving",
@@ -1246,7 +1246,7 @@
         "ros",
         "ros2"
       ],
-      "pushed_at": "2026-11-20T08:55:24Z",
+      "pushed_at": "2026-11-20T22:19:02Z",
       "created_at": "2015-08-24T23:17:57Z",
       "archived": false,
       "starred_at": "2024-04-24T02:06:05Z"
@@ -1271,8 +1271,8 @@
       "html_url": "https://github.com/jwasham/coding-interview-university",
       "description": "A complete computer science study plan to become a software engineer.",
       "language": null,
-      "stargazers_count": 364622,
-      "forks_count": 85984,
+      "stargazers_count": 364708,
+      "forks_count": 85199,
       "topics": [
         "algorithm",
         "algorithms",
@@ -1353,8 +1353,8 @@
       "html_url": "https://github.com/practical-tutorials/project-based-learning",
       "description": "Curated list of project-based tutorials",
       "language": "Python",
-      "stargazers_count": 290076,
-      "forks_count": 36857,
+      "stargazers_count": 290143,
+      "forks_count": 36848,
       "topics": [
         "beginner-project",
         "cpp",
@@ -1376,7 +1376,7 @@
       "html_url": "https://github.com/TheAlgorithms/C-Plus-Plus",
       "description": "Collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes.",
       "language": "C++",
-      "stargazers_count": 34896,
+      "stargazers_count": 34899,
       "forks_count": 7901,
       "topics": [
         "algorithm",
@@ -1427,8 +1427,8 @@
       "html_url": "https://github.com/gabime/spdlog",
       "description": "Fast C++ logging library.",
       "language": "C++",
-      "stargazers_count": 29779,
-      "forks_count": 5337,
+      "stargazers_count": 29786,
+      "forks_count": 5335,
       "topics": [
         "cpp",
         "cpp11",
@@ -1436,7 +1436,7 @@
         "logging",
         "spdlog"
       ],
-      "pushed_at": "2026-11-20T10:09:11Z",
+      "pushed_at": "2026-11-20T12:09:09Z",
       "created_at": "2014-11-01T01:28:53Z",
       "archived": false,
       "starred_at": "2023-03-14T09:36:13Z"
@@ -1447,8 +1447,8 @@
       "html_url": "https://github.com/youngyangyang04/leetcode-master",
       "description": "《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀 ",
       "language": "Shell",
-      "stargazers_count": 62839,
-      "forks_count": 12281,
+      "stargazers_count": 62840,
+      "forks_count": 12264,
       "topics": [
         "algorithm",
         "cpp",
@@ -1486,7 +1486,7 @@
       "html_url": "https://github.com/guofei9987/scikit-opt",
       "description": "Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Optimization Algorithm,Immune Algorithm, Artificial Fish Swarm Algorithm, Differential Evolution and TSP(Traveling salesman) ",
       "language": "Python",
-      "stargazers_count": 6728,
+      "stargazers_count": 6729,
       "forks_count": 1107,
       "topics": [
         "ant-colony-algorithm",
@@ -1601,7 +1601,7 @@
       "stargazers_count": 164,
       "forks_count": 119,
       "topics": [],
-      "pushed_at": "2026-11-16T08:38:06Z",
+      "pushed_at": "2026-11-20T19:53:19Z",
       "created_at": "2012-10-09T18:49:39Z",
       "archived": false,
       "starred_at": "2019-10-28T03:07:48Z"
